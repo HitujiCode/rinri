@@ -4,7 +4,7 @@
 
   <!-- 共通 -->
 
-  <div class="test">test</div>
+  <div class="test">tet</div>
 
 </main>
 

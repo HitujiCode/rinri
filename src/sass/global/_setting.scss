@@ -4,52 +4,21 @@
 // インナー幅設定
 ////////////////////
 // コンテンツのインナー幅（最も共通の幅が多い部分）
-$inner: 960px;
+$inner: 1232px;
 // ※キャンパス幅ではなくインナーの幅を指す
 
 // 余白
 $padding-pc: 25px;
-$padding-sp: 60px;
+$padding-sp: 20px;
 // ※PC時：デザインカンプの余白の幅ではない。PC時は通常25pxで大丈夫！
 
 ////////////////////
 // フォント設定
 ////////////////////
 
-@font-face {
-  font-display: swap;
-  font-weight: 400;
-  font-style: normal;
-  font-family: "Noto Serif JP";
-  src: url("../fonts/NotoSerifJP-Regular.woff") format("woff");
-}
-
-@font-face {
-  font-display: swap;
-  font-weight: 500;
-  font-style: normal;
-  font-family: "Noto Serif JP";
-  src: url("../fonts/NotoSerifJP-Medium.woff") format("woff");
-}
-
-@font-face {
-  font-display: swap;
-  font-weight: 700;
-  font-style: normal;
-  font-family: "Noto Serif JP";
-  src: url("../fonts/NotoSerifJP-Bold.woff") format("woff");
-}
-
-@font-face {
-  font-display: swap;
-  font-weight: 400;
-  font-style: normal;
-  font-family: "Lora";
-  src: url("../fonts/Lora-Regular.woff") format("woff");
-}
-
-$base-font: "Noto Serif JP", sans-serif;
-$en-font: "Lora", sans-serif;
+$base-font: "Noto Sans JP", sans-serif;
+$mincho-font: "Yu Mincho", YuMincho, "Hiragino Mincho Pro", serif;
+$en-font: "EB Garamond", serif;
 // ※検証ツールでしっかり反映されているか確認する
 
 // フォントウェイト
@@ -63,13 +32,14 @@ $bold: 700;
 ////////////////////
 
 //色指定（共通性のあるものは出来る限り指定すると良い）
-$black: #333;
+$base: #cbb94f;
+$baige: #f7f6f0;
+$black: #291000;
 $white: #fff;
-$base: #5d5d5d;
 $blue: #391e88;
 $bg-black: #120e19;
 
 body {
   font-family: $base-font;
-  color: $base;
+  font-optical-sizing: auto;
 }

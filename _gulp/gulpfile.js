@@ -201,7 +201,8 @@ const jsBabel = () => {
 
 const browserSyncOption = {
   notify: false,
-  proxy: `localhost:10010`, // ローカルサーバーのURL（WordPress）
+  // proxy: `http://localhost:10010`, // ローカルサーバーのURL（WordPress）
+  proxy: `http://rinri.local`, // ローカルサーバーのURL（WordPress）
 };
 const browserSyncFunc = () => {
   browserSync.init(browserSyncOption);

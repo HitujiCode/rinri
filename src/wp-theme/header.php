@@ -13,12 +13,66 @@
   <meta property="og:site_name" content="" />
   <meta property="og:description" content="" />
 
+  <!-- functions.phpで後で読み込む -->
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+  <!-- css -->
+  <link rel="stylesheet" href="wp-content/themes/rinri/assets/css/style.css">
+  <!-- js -->
+  <script defer src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script defer src="wp-content/themes/rinri/assets/js/script.js"></script>
   <?php wp_head(); ?>
 </head>
 
 <body>
-    <header style="height: 100px;" class="l-header p-header" id="header">
-      <div class="p-header__inner l-inner">
-
+  <header class="header">
+    <div class="header__inner">
+      <h1 class="header__logo">
+        <a href="#" class="logo">
+          <img src="wp-content/themes/rinri/assets/images/common/logo.svg" alt="LOGO">
+        </a>
+      </h1>
+      <nav class="header__nav">
+        <ul class="header__nav-items">
+          <li class="header__nav-item">
+            <a href="#">top</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#">about</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#">works</a>
+          </li>
+          <li class="header__nav-item header__nav-item--contact">
+            <a href="#" target="_blank" rel="noopener">contact</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="header__hamburger js-hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="header__drawer js-drawer">
+        <nav class="header__drawer-nav">
+          <ul class="header__drawer-items">
+            <li class="header__drawer-item">
+              <a href="#">top</a>
+            </li>
+            <li class="header__drawer-item">
+              <a href="#">about</a>
+            </li>
+            <li class="header__drawer-item">
+              <a href="#">works</a>
+            </li>
+            <li class="header__drawer-item header__drawer-item--contact">
+              <a href="#" target="_blank" rel="noopener">contact</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-    </header>
+    </div>
+  </header>
