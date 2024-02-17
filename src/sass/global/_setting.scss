@@ -16,8 +16,8 @@ $padding-sp: 20px;
 // フォント設定
 ////////////////////
 
-$base-font: "Noto Sans JP", sans-serif;
 $mincho-font: "Yu Mincho", YuMincho, "Hiragino Mincho Pro", serif;
+$Gothic-font: "Noto Sans JP", sans-serif;
 $en-font: "EB Garamond", serif;
 // ※検証ツールでしっかり反映されているか確認する
 
@@ -40,6 +40,6 @@ $blue: #391e88;
 $bg-black: #120e19;
 
 body {
-  font-family: $base-font;
+  font-family: $mincho-font;
   font-optical-sizing: auto;
 }

@@ -37,6 +37,12 @@ const srcPath = {
 
 // WordPress反映用
 const destPath = {
+  // all: `../src/wp-theme/**/*`,
+  // css: `../src/wp-theme/assets/css/`,
+  // js: `../src/wp-theme/assets/js/`,
+  // img: `../src/wp-theme/assets/images/`,
+  // wp: `${baseFolder}/`,
+  // font: `../src/wp-theme/assets/fonts/`,
   all: `${baseFolder}/**/*`,
   css: `${baseFolder}/assets/css/`,
   js: `${baseFolder}/assets/js/`,

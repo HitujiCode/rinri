@@ -32,22 +32,28 @@
     <div class="header__inner">
       <h1 class="header__logo">
         <a href="#" class="logo">
-          <img src="wp-content/themes/rinri/assets/images/common/logo.svg" alt="LOGO">
+          <div class="logo__icon">
+            <img src="wp-content/themes/rinri/assets/images/common/logo.svg" alt="Logo">
+          </div>
+          <div class="logo__title">新潟県倫理法人会</div>
         </a>
       </h1>
       <nav class="header__nav">
         <ul class="header__nav-items">
           <li class="header__nav-item">
-            <a href="#">top</a>
+            <a href="#"><span>はじめての方へ</span></a>
           </li>
           <li class="header__nav-item">
-            <a href="#">about</a>
+            <a href="#"><span>入会案内</span></a>
           </li>
           <li class="header__nav-item">
-            <a href="#">works</a>
+            <a href="#"><span>会員の方へ</span></a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#"><span>倫理法人会について</span></a>
           </li>
           <li class="header__nav-item header__nav-item--contact">
-            <a href="#" target="_blank" rel="noopener">contact</a>
+            <a href="#" target="_blank" rel="noopener">お問い合わせ</a>
           </li>
         </ul>
       </nav>
@@ -60,16 +66,19 @@
         <nav class="header__drawer-nav">
           <ul class="header__drawer-items">
             <li class="header__drawer-item">
-              <a href="#">top</a>
+              <a href="#"><span>はじめての方へ</span></a>
             </li>
             <li class="header__drawer-item">
-              <a href="#">about</a>
+              <a href="#"><span>入会案内</span></a>
             </li>
             <li class="header__drawer-item">
-              <a href="#">works</a>
+              <a href="#"><span>会員の方へ</span></a>
+            </li>
+            <li class="header__drawer-item">
+              <a href="#"><span>倫理法人会につ</span>いて</a>
             </li>
             <li class="header__drawer-item header__drawer-item--contact">
-              <a href="#" target="_blank" rel="noopener">contact</a>
+              <a href="#" target="_blank" rel="noopener"><span>お問い合わせ</span></a>
             </li>
           </ul>
         </nav>

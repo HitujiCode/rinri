@@ -1,49 +1,34 @@
 @use "global" as *;
 
 .header {
-  height: prem(40);
-  background-color: #fff;
+  height: rem(130);
+  background-color: $white;
   @include mq("md") {
-    height: prem(70);
+    height: rem(70);
   }
 }
 
 .header__inner {
-  padding-left: prem(15);
+  padding-left: min((100/1440 * 100vw), 100px);
   height: inherit;
   display: flex;
-  justify-content: space-between;
-  @include mq("md") {
-    padding: 0 prem(50);
+  align-items: center;
+  @include mq("lg") {
+    padding-left: rem(20);
   }
 }
 
 .header__logo {
-  max-width: prem(74);
-  width: 100%;
-  height: inherit;
-  @include mq("md") {
-    max-width: prem(100);
-  }
-}
-
-.header__logo a {
-  height: inherit;
   display: flex;
-  align-items: center;
-}
-
-.header__logo img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
+  height: inherit;
 }
 
 .header__nav {
-  display: none;
+  display: block;
   height: inherit;
+  margin-left: auto;
   @include mq("md") {
-    display: block;
+    display: none;
   }
 }
 
@@ -57,57 +42,80 @@
 }
 
 .header__nav-item.header__nav-item--contact {
-  margin-left: prem(15);
+  margin-left: rem(56);
+  margin-left: min((56/1440 * 100vw), 56px);
   display: flex;
   align-items: center;
 }
 
 .header__nav-item a {
-  padding: 0 prem(15);
+  padding: 0 rem(24);
+  padding: 0 min((24/1440 * 100vw), 24px);
   height: inherit;
   display: flex;
   align-items: center;
-  font-size: prem(15);
-  font-weight: 500;
+  font-size: rem(16);
+  font-size: clamp(10px, (16/1440 * 100vw), 16px);
+  font-weight: $regular;
   line-height: 1;
-  color: #333;
-  text-transform: uppercase;
 }
 
-.header__nav-item.header__nav-item--contact a {
-  padding: prem(10) prem(20);
+.header__nav-item span {
   position: relative;
-  height: initial;
-  color: #fff;
-  background-color: #de8430;
+  padding-right: rem(22);
+  padding-right: min((22/1440 * 100vw), 22px);
 }
 
-.header__nav-item.header__nav-item--contact a::after {
+.header__nav-item span::after {
+  position: absolute;
   content: "";
-  margin-left: prem(10);
-  width: prem(11);
-  height: prem(12);
+  width: rem(10);
+  height: rem(10);
   display: inline-block;
-  background-image: url(./../images/common/contact-icon.svg);
+  right: 0;
+  background-image: url(./../images/common/icon-down-arrow.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
 }
 
+.header__nav-item.header__nav-item--contact a {
+  padding: 0 rem(59);
+  padding: 0 min((59/1440 * 100vw), 59px);
+  position: relative;
+  color: $white;
+  background-color: $base;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: rem(16);
+}
+
+.header__nav-item.header__nav-item--contact a::before {
+  content: "";
+  width: rem(42);
+  height: rem(31);
+  display: inline-block;
+  background-image: url(./../images/common/icon-contact.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  filter: brightness(0) invert(1);
+}
+
 .header__hamburger {
-  margin: 0;
+  margin-left: auto;
   padding: 0;
-  outline: none;
-  border: none;
   position: relative;
   z-index: 999;
-  width: prem(40);
+  width: rem(40);
   height: inherit;
-  background-color: #de8430;
+  background-color: $base;
   cursor: pointer;
   transition: 0.3s;
+  display: none;
   @include mq("md") {
-    display: none;
+    display: block;
   }
 }
 
@@ -120,14 +128,14 @@
   left: 50%;
   transform: translateX(-50%);
   display: block;
-  width: prem(15);
+  width: rem(15);
   height: 1px;
-  background-color: #fff;
+  background-color: $white;
   transition: 0.5s;
 }
 
 .header__hamburger span:nth-of-type(1) {
-  top: prem(-4);
+  top: rem(-4);
 }
 
 .header__hamburger span:nth-of-type(2) {
@@ -135,7 +143,7 @@
 }
 
 .header__hamburger span:nth-of-type(3) {
-  top: prem(4);
+  top: rem(4);
 }
 
 .header__hamburger.is-open span:nth-of-type(1) {
@@ -148,19 +156,19 @@
 }
 
 .header__hamburger.is-open span:nth-of-type(3) {
-  top: prem(-2);
+  top: rem(-2);
   transform: translateX(-50%) rotate(-45deg);
 }
 
 .header__drawer {
-  padding: prem(228) 0;
+  padding: rem(228) 0;
   position: absolute;
   z-index: 900;
   top: 0;
   right: -120%;
   width: 100%;
-  height: 100vh;
-  background-color: rgba($color: #623a14, $alpha: 0.95);
+  height: 100dvh;
+  background-color: $base;
   overflow-y: scroll;
   scrollbar-width: none;
   transition: 0.6s;
@@ -175,26 +183,12 @@
 }
 
 .header__drawer-item a {
-  padding: prem(15) 0;
+  padding: rem(15) 0;
   display: block;
-  font-size: prem(36);
+  font-size: rem(16);
   font-weight: 700;
   line-height: 1;
   letter-spacing: 0.05em;
-  color: #fff;
+  color: $white;
   text-align: center;
-  text-transform: uppercase;
-}
-
-.header__drawer-item.header__drawer-item--contact a::after {
-  content: "";
-  margin-bottom: prem(5);
-  margin-left: prem(20);
-  width: prem(15);
-  height: prem(15);
-  display: inline-block;
-  background-image: url(./../images/common/contact-icon.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
 }
