@@ -1,0 +1,31 @@
+@use "global" as *;
+
+@use "global" as *;
+
+.section-head {
+  font-weight: $medium;
+  line-height: 1;
+}
+
+.section-head__en {
+  font-size: rem(48);
+  font-weight: $regular;
+  font-family: $en-font;
+  color: $base2;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  @include mq("md") {
+    font-size: 32px;
+  }
+}
+
+.section-head__ja {
+  margin-top: rem(26);
+  font-size: rem(20);
+  font-weight: $regular;
+  line-height: 1;
+  @include mq("md") {
+    margin-top: rem(2);
+    font-size: 12px;
+  }
+}

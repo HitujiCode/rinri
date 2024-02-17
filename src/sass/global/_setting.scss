@@ -17,7 +17,7 @@ $padding-sp: 20px;
 ////////////////////
 
 $mincho-font: "Yu Mincho", YuMincho, "Hiragino Mincho Pro", serif;
-$Gothic-font: "Noto Sans JP", sans-serif;
+$gothic-font: "Noto Sans JP", sans-serif;
 $en-font: "EB Garamond", serif;
 // ※検証ツールでしっかり反映されているか確認する
 
@@ -33,10 +33,12 @@ $bold: 700;
 
 //色指定（共通性のあるものは出来る限り指定すると良い）
 $base: #cbb94f;
+$base2: #cbb84f;
 $baige: #f7f6f0;
 $black: #291000;
 $white: #fff;
-$blue: #391e88;
+$red: #c38b79;
+$blue: #8390AB;
 $bg-black: #120e19;
 
 body {
