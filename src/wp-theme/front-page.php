@@ -1,6 +1,16 @@
 <?php get_header(); ?>
 
-<main>
+<main class="layout-main">
+  <div class="mv">
+    <div class="mv__inner inner">
+      <div class="mv__title-wrap">
+        <h2 class="mv__title-main">rinri<br>
+          hojinkai<br>
+          niigata</h2>
+        <p class="mv__title-sub">あなたの変化で会社を変える</p>
+      </div>
+    </div>
+  </div>
 
   <!-- 共通 -->
 
