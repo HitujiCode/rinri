@@ -1,6 +1,6 @@
 @use "global" as *;
 
-%button {
+.button {
   display: inline-block;
   padding: rem(22) rem(20);
   width: 100%;
@@ -9,81 +9,123 @@
   font-weight: $regular;
   line-height: 1;
   letter-spacing: 0.05em;
-  // transition: all 0.3s ease;
-}
-
-%button span::before {
-  // content: "";
-  display: inline-block;
-  position: absolute;
-  top: 50%;
-  right: rem(20);
-  transform: translateY(-50%);
-  width: rem(9);
-  height: rem(10);
-  background-color: rgba($white, 0.5);
-  border-radius: 50%;
-  // z-index: 1;
-  // transition: all 0.3s ease;
-}
-
-%button span::after {
-  --stroke-color: #c38b79;
-  content: "";
-  position: absolute;
-  top: 50%;
-  right: 0;
-  transform: translateY(-50%);
-  width: rem(25);
-  height: rem(13);
-  // background-image: url(./../images/common/icon-arrow.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  // z-index: 1;
-  // transition: all 0.3s ease;
-}
-
-.button {
-  @extend %button;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   background-color: $base;
   color: $white;
+  --stroke-color: blue;
+  // transition: all 0.3s ease;
 }
 
-.button span::after {
+.button__icon {
+  width: rem(25);
+  height: rem(13);
   filter: brightness(0) invert(1);
 }
 
+.button__svg {
+  aspect-ratio: 25/13;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
 .button--red {
-  @extend %button;
+  @extend .button;
   background-color: $white;
   color: $red;
 }
 
-.button--red span::before {
-  background-color: rgba($red, 0.5);
-}
-.button--red {
-  @extend %button;
-  background-color: $white;
-  color: $red;
+.button--red .button__icon {
+  filter: unset;
 }
 
-.button--blue span::before {
-  background-color: rgba($blue, 0.5);
-}
 .button--blue {
-  @extend %button;
+  @extend .button;
   background-color: $white;
   color: $blue;
 }
 
-.button--red span::before {
-  background-color: rgba($red, 0.5);
+.button--small {
+  @extend .button;
+  max-width: rem(212);
+}
+
+.button--blue {
+  @extend .button;
+  background-color: $white;
+  color: $blue;
+}
+
+.button--blue .button__icon {
+  filter: unset;
+}
+
+.button--blue svg *[stroke] {
+  stroke: $blue;
+}
+
+.button--blue ellipse {
+  fill: $blue;
+}
+
+.button--green {
+  @extend .button;
+  background-color: $white;
+  color: $green;
+}
+
+.button--green .button__icon {
+  filter: unset;
+}
+
+.button--green svg *[stroke] {
+  stroke: $green;
+}
+
+.button--green ellipse {
+  fill: $green;
+}
+
+.button--white {
+  @extend .button;
+  background-color: $white;
+  color: $gold;
+}
+
+.button--white .button__icon {
+  filter: unset;
+}
+
+.button--white svg *[stroke] {
+  stroke: $base;
+}
+
+.button--white ellipse {
+  fill: $base;
+}
+
+.button--gold {
+  @extend .button;
+  background-color: $gold;
+  color: $white;
+}
+
+.button--gold .button__icon {
+  filter: unset;
+}
+
+.button--gold svg *[stroke] {
+  stroke: $white;
+}
+
+.button--gold ellipse {
+  fill: $white;
 }
 
 @media (hover: hover) {
-  .c-button:hover {
+  .button:hover {
     background-color: $black;
   }
 }
