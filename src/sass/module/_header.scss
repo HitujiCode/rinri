@@ -172,10 +172,12 @@
   overflow-y: scroll;
   scrollbar-width: none;
   transition: 0.6s;
+  display: none;
 }
 
 .header__drawer.is-open {
   right: 0;
+  display: block;
 }
 
 .header__drawer::-webkit-scrollbar {

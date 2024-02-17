@@ -1,7 +1,6 @@
 @use "global" as *;
 
 .button {
-  display: inline-block;
   padding: rem(22) rem(20);
   width: 100%;
   max-width: rem(278);
@@ -14,7 +13,6 @@
   justify-content: space-between;
   background-color: $base;
   color: $white;
-  --stroke-color: blue;
   // transition: all 0.3s ease;
 }
 
@@ -91,7 +89,7 @@
 .button--white {
   @extend .button;
   background-color: $white;
-  color: $gold;
+  color: $ocher;
 }
 
 .button--white .button__icon {
@@ -106,32 +104,28 @@
   fill: $base;
 }
 
-.button--gold {
+.button--ocher {
   @extend .button;
-  background-color: $gold;
+  background-color: $ocher;
   color: $white;
 }
 
-.button--gold .button__icon {
+.button--ocher .button__icon {
   filter: unset;
 }
 
-.button--gold svg *[stroke] {
+.button--ocher svg *[stroke] {
   stroke: $white;
 }
 
-.button--gold ellipse {
+.button--ocher ellipse {
   fill: $white;
 }
 
 @media (hover: hover) {
   .button:hover {
-    background-color: $black;
+    background-color: $base;
   }
-}
-
-.button__svg-ellipse {
-  // animation: test 1s infinite;
 }
 
 @keyframes test {

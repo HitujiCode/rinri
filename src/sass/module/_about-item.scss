@@ -1,0 +1,67 @@
+@use "global" as *;
+
+.about-list {
+  max-width: rem(700);
+}
+
+.about-item {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid $yellow;
+  padding: rem(52) 0;
+  position: relative;
+}
+
+.about-item::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: calc(50% - rem(250));
+  transform: translateY(-50%);
+  width: rem(300);
+  height: rem(212);
+  background-image: url(./../images/top/about1@2x.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  visibility: hidden;
+  opacity: 0;
+  transition:
+    visibility 0.3s ease,
+    opacity 0.3s ease;
+  @include mq("md") {
+    content: none;
+  }
+}
+
+@media (hover: hover) {
+  .about-item:hover::before {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.about-item__title {
+  font-size: rem(28);
+  font-weight: $regular;
+  line-height: 1;
+}
+
+.about-item__icon {
+}
+
+.about-item__icon svg {
+  aspect-ratio: 25/13;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.about-item__icon svg *[stroke] {
+  stroke: $darkbrown;
+}
+
+.about-item__icon ellipse {
+  fill: $yellow;
+  opacity: 1;
+}
