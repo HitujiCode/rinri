@@ -1,0 +1,7 @@
+@use "global" as *;
+
+.layout-member {
+  margin-top: rem(120);
+  padding: rem(120) 0 rem(160);
+  background-color: $ivory;
+}

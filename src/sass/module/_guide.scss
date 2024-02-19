@@ -1,0 +1,48 @@
+@use "global" as *;
+
+.guide {
+}
+
+.guide__inner {
+}
+
+.guide__items {
+  display: flex;
+}
+
+.guide__item,
+.guide__item:nth-child(even) {
+  flex: 1;
+  padding-top: rem(92);
+  padding-bottom: rem(88);
+}
+
+.guide__item {
+  padding-left: calc(70 / 1440 * 100%);
+  padding-right: calc(75 / 1440 * 100%);
+}
+
+.guide__item:nth-child(even) {
+  padding-left: calc(75 / 1440 * 100%);
+  padding-right: calc(70 / 1440 * 100%);
+}
+
+.guide__item-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.guide__item-icon {
+  width: rem(25);
+  height: rem(13);
+}
+
+.guide__item-icon svg *[stroke] {
+  stroke: $darkbrown;
+}
+
+.guide__item-icon ellipse {
+  fill: $ivory;
+  opacity: 1;
+}

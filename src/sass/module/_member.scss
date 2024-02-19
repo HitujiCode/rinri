@@ -1,0 +1,70 @@
+@use "global" as *;
+
+.member {
+  overflow-x: hidden;
+}
+
+.member__inner {
+}
+
+.member__container {
+}
+
+.member__head {
+  text-align: center;
+}
+
+.member__text {
+  margin-top: rem(56);
+  text-align: center;
+}
+
+.member__list {
+  position: relative;
+  margin-top: rem(90);
+}
+
+.member__swiper {
+  margin-right: calc(50% - 50vw);
+}
+
+.member__swiper .swiper-slide {
+  width: rem(278);
+}
+
+.member__swiper-ui .swiper-scrollbar {
+  position: initial;
+  margin-left: auto;
+  height: 1px;
+  width: calc(1060 / 1232 * 100%);
+  background-color: rgba($base, 0.3);
+}
+
+.member__swiper-ui .swiper-scrollbar-drag {
+  width: calc(318 / 1060 * 100%);
+  background-color: $base;
+}
+
+.member__swiper-ui {
+  margin-top: rem(34);
+  display: flex;
+  align-items: center;
+}
+
+.member__swiper-ui .swiper-button-prev,
+.member__swiper-ui .swiper-button-next {
+  position: initial;
+  margin-top: initial;
+  width: rem(40);
+  height: rem(40);
+}
+
+.member__swiper-ui .swiper-button-next {
+  margin-left: rem(24);
+}
+
+.member__button {
+  margin-top: rem(60);
+  display: flex;
+  justify-content: center;
+}

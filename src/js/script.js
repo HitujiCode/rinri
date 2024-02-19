@@ -112,19 +112,28 @@ jQuery(function ($) {
   //   });
   // });
 
-  // Fvスライダー
-  var fvSwiperContainer = document.querySelector(".js-fv-swiper");
-  if (fvSwiperContainer) {
-    var fvSwiper = new Swiper(fvSwiperContainer, {
-      loop: true,
-      effect: "fade",
-      speed: 3000,
-      fadeEffect: {
-        crossFade: true,
-      },
-      autoplay: {
-        delay: 2000,
-      },
-    });
-  }
+  // memberSwiper
+  const memberSwiper = new Swiper(".js-member-swiper", {
+    // loop: true,
+    slidesPerView: "auto",
+    spaceBetween: 40,
+    // centerdSlides: false,
+    // If we need pagination
+    pagination: {
+      el: ".swiper-pagination",
+    },
+
+    // Navigation arrows
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+
+    // And if we need scrollbar
+    scrollbar: {
+      el: ".swiper-scrollbar",
+      hide: false,
+      dragSize: 318,
+    },
+  });
 });
