@@ -118,22 +118,48 @@ jQuery(function ($) {
     slidesPerView: "auto",
     spaceBetween: 40,
     // centerdSlides: false,
-    // If we need pagination
-    pagination: {
-      el: ".swiper-pagination",
-    },
 
     // Navigation arrows
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+      nextEl: ".js-member-swiper-ui .swiper-button-next",
+      prevEl: ".js-member-swiper-ui .swiper-button-prev",
     },
 
     // And if we need scrollbar
     scrollbar: {
-      el: ".swiper-scrollbar",
+      el: ".js-member-swiper-ui .swiper-scrollbar",
       hide: false,
       dragSize: 318,
     },
+  });
+
+  // seminarSwiper
+  const seminarSwiper = new Swiper(".js-seminar-swiper", {
+    // loop: true,
+    slidesPerView: "auto",
+    spaceBetween: 40,
+    // centerdSlides: false,
+
+    // Navigation arrows
+    navigation: {
+      nextEl: ".js-seminar-swiper-ui .swiper-button-next",
+      prevEl: ".js-seminar-swiper-ui .swiper-button-prev",
+    },
+
+    // And if we need scrollbar
+    scrollbar: {
+      el: ".js-seminar-swiper-ui .swiper-scrollbar",
+      hide: false,
+      dragSize: 318,
+    },
+  });
+
+  // infomationTab
+  $(".js-tab-menu").click(function () {
+    $(".js-tab-menu").removeClass("is-active");
+    $(this).addClass("is-active");
+    $(".js-tab-content").removeClass("is-active");
+    const index = $(this).index();
+    $(".js-tab-content").eq(index).addClass("is-active");
   });
 });

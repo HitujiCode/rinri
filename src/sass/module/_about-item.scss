@@ -1,10 +1,9 @@
 @use "global" as *;
 
-.about-list {
-  max-width: rem(700);
+.about-item {
 }
 
-.about-item {
+.about-item__link {
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid $yellow;
@@ -46,6 +45,8 @@
 }
 
 .about-item__icon {
+  width: rem(25);
+  height: rem(13);
 }
 
 .about-item__icon svg {

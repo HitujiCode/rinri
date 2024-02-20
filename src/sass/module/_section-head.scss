@@ -35,3 +35,11 @@
 .section-head--small .section-head__en {
   font-size: rem(24);
 }
+
+.section-head--white {
+  @extend .section-head;
+}
+
+.section-head--white .section-head__ja {
+  color: $white;
+}

@@ -1,0 +1,7 @@
+@use "global" as *;
+
+.layout-seminar {
+  margin-top: rem(120);
+  padding-top: rem(120);
+  border-top: 1px solid $lightgray;
+}

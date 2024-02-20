@@ -234,7 +234,7 @@
               </li>
             </ul>
           </div>
-          <div class="member__swiper-ui">
+          <div class="member__swiper-ui js-member-swiper-ui">
             <div class="member__swiper-ui-prev swiper-button-prev"><img src="wp-content/themes/rinri/assets/images/common/icon-prev.svg" alt="前へ" width="" height="" loading="lazy" /></div>
             <div class="member__swiper-ui-next swiper-button-next"><img src="wp-content/themes/rinri/assets/images/common/icon-next.svg" alt="次へ" width="" height="" loading="lazy" /></div>
             <div class="member__swiper-ui-scrollbar swiper-scrollbar"></div>
@@ -262,10 +262,10 @@
             </div>
           </div>
           <ul class="infomation__tab-menu">
-            <li class="infomation__tab-menu-item label-category--white js-tab-menu is-active" data-number="tab01">カテゴリ1</li>
-            <li class="infomation__tab-menu-item label-category--white js-tab-menu" data-number="tab02">カテゴリ2</li>
-            <li class="infomation__tab-menu-item label-category--white js-tab-menu" data-number="tab03">カテゴリ3</li>
-            <li class="infomation__tab-menu-item label-category--white js-tab-menu" data-number="tab04">カテゴリ3</li>
+            <li class="infomation__tab-menu-item label-category--white js-tab-menu is-active" data-number="tab01">カテゴリ</li>
+            <li class="infomation__tab-menu-item label-category--white js-tab-menu" data-number="tab02">カテゴリ</li>
+            <li class="infomation__tab-menu-item label-category--white js-tab-menu" data-number="tab03">カテゴリ</li>
+            <li class="infomation__tab-menu-item label-category--white js-tab-menu" data-number="tab04">カテゴリ</li>
           </ul>
           <div class="infomation__button">
             <a href="#" class="button--small">Read more
@@ -276,252 +276,316 @@
           </div>
         </div>
         <div class="infomation__tab-content-wrap">
-          <ul id="tab01" class="infomation__tab-content info-cards js-tab-content">
+          <ul id="tab01" class="infomation__tab-content info-cards js-tab-content is-active">
             <li class="info-card">
-              <div class="info-card__img">
-                <img src="wp-content/themes/rinri/assets/images/top/info1@2x.webp" alt="" width="" height="" loading="lazy">
-              </div>
-              <h3 class="info-card__title">ここに活動報告のタイトルが入ります。ダミーです。</h3>
-              <div class="info-card__meta">
-                <time class="info-card__date" datetime="2024-01-04">2024.01.04</time>
-                <span class="info-card__category label-category">カテゴリ</span>
-              </div>
+              <a class="info-card__link" href="#">
+                <div class="info-card__img">
+                  <img src="wp-content/themes/rinri/assets/images/top/info1@2x.webp" alt="" width="" height="" loading="lazy">
+                </div>
+                <h3 class="info-card__title">ここに活動報告のタイトルが入ります。ダミーです。</h3>
+                <div class="info-card__meta">
+                  <time class="info-card__date" datetime="2024-01-04">2024.01.04</time>
+                  <span class="info-card__category label-category">カテゴリ</span>
+                </div>
+              </a>
+            </li>
+            <li class="info-card">
+              <a class="info-card__link" href="#">
+                <div class="info-card__img">
+                  <img src="wp-content/themes/rinri/assets/images/top/info2@2x.webp" alt="" width="" height="" loading="lazy">
+                </div>
+                <h3 class="info-card__title">ここに活動報告のタイトルが入ります。ダミーです。</h3>
+                <div class="info-card__meta">
+                  <time class="info-card__date" datetime="2024-01-04">2024.01.04</time>
+                  <span class="info-card__category label-category">カテゴリ</span>
+                </div>
+              </a>
+            </li>
+            <li class="info-card">
+              <a class="info-card__link" href="#">
+                <div class="info-card__img">
+                  <img src="wp-content/themes/rinri/assets/images/top/about1@2x.webp" alt="" width="" height="" loading="lazy">
+                </div>
+                <h3 class="info-card__title">ここに活動報告のタイトルが入ります。ダミーです。</h3>
+                <div class="info-card__meta">
+                  <time class="info-card__date" datetime="2024-01-04">2024.01.04</time>
+                  <span class="info-card__category label-category">カテゴリ</span>
+                </div>
+              </a>
             </li>
           </ul>
           <ul id="tab02" class="infomation__tab-content info-cards js-tab-content">
             <li class="info-card">
-              <div class="info-card__img">
-                <img src="wp-content/themes/rinri/assets/images/top/info1@2x.webp" alt="" width="" height="" loading="lazy">
-              </div>
-              <h3 class="info-card__title">ここに活動報告のタイトルが入ります。ダミーです。</h3>
-              <div class="info-card__meta">
-                <time class="info-card__date" datetime="2024-01-04">2024.01.04</time>
-                <span class="info-card__category label-category">カテゴリ</span>
-              </div>
+              <a class="info-card__link" href="#">
+                <div class="info-card__img">
+                  <img src="wp-content/themes/rinri/assets/images/top/info2@2x.webp" alt="" width="" height="" loading="lazy">
+                </div>
+                <h3 class="info-card__title">ここに活動報告のタイトルが入ります。ダミーです。</h3>
+                <div class="info-card__meta">
+                  <time class="info-card__date" datetime="2024-01-04">2024.01.04</time>
+                  <span class="info-card__category label-category">カテゴリ</span>
+                </div>
+              </a>
             </li>
           </ul>
-          <ul id="tab01" class="infomation__tab-content info-cards js-tab-content">
+          <ul id="tab03" class="infomation__tab-content info-cards js-tab-content">
             <li class="info-card">
-              <div class="info-card__img">
-                <img src="wp-content/themes/rinri/assets/images/top/info1@2x.webp" alt="" width="" height="" loading="lazy">
-              </div>
-              <h3 class="info-card__title">ここに活動報告のタイトルが入ります。ダミーです。</h3>
-              <div class="info-card__meta">
-                <time class="info-card__date" datetime="2024-01-04">2024.01.04</time>
-                <span class="info-card__category label-category">カテゴリ</span>
-              </div>
+              <a class="info-card__link" href="#">
+                <div class="info-card__img">
+                  <img src="wp-content/themes/rinri/assets/images/top/about1@2x.webp" alt="" width="" height="" loading="lazy">
+                </div>
+                <h3 class="info-card__title">ここに活動報告のタイトルが入ります。ダミーです。</h3>
+                <div class="info-card__meta">
+                  <time class="info-card__date" datetime="2024-01-04">2024.01.04</time>
+                  <span class="info-card__category label-category">カテゴリ</span>
+                </div>
+              </a>
             </li>
           </ul>
-          <ul id="tab01" class="infomation__tab-content info-cards js-tab-content">
+          <ul id="tab04" class="infomation__tab-content info-cards js-tab-content">
             <li class="info-card">
-              <div class="info-card__img">
-                <img src="wp-content/themes/rinri/assets/images/top/info1@2x.webp" alt="" width="" height="" loading="lazy">
-              </div>
-              <h3 class="info-card__title">ここに活動報告のタイトルが入ります。ダミーです。</h3>
-              <div class="info-card__meta">
-                <time class="info-card__date" datetime="2024-01-04">2024.01.04</time>
-                <span class="info-card__category label-category">カテゴリ</span>
-              </div>
+              <a class="info-card__link" href="#">
+                <div class="info-card__img">
+                  <img src="wp-content/themes/rinri/assets/images/top/mv@2x.webp" alt="" width="" height="" loading="lazy">
+                </div>
+                <h3 class="info-card__title">ここに活動報告のタイトルが入ります。ダミーです。</h3>
+                <div class="info-card__meta">
+                  <time class="info-card__date" datetime="2024-01-04">2024.01.04</time>
+                  <span class="info-card__category label-category">カテゴリ</span>
+                </div>
+              </a>
             </li>
           </ul>
         </div>
       </div>
     </div>
   </section>
-  <!-- 共通 -->
 
-  <div class=" inner">
-    <div class="section-head">
-      <p class="section-head__en">Beginner’s Guide</p>
-      <h2 class="section-head__ja">はじめての方へ</h2>
-    </div>
-
-    <!-- カード -->
-
-
-    <!-- カード -->
-    <ul class="seminar-cards">
-      <li class="seminar-card">
-        <div class="seminar-card__head">
-          <div class="seminar-card__title-wrap">
-            <h3 class="seminar-card__title">
-              <span class="seminar-card__title-number">第100回</span><span class="seminar-card__title-text">人生は倫理</span>
-            </h3>
-          </div>
-          <div class="seminar-card__img">
-            <img src="wp-content/themes/rinri/assets/images/top/seminar1@2x.jpg" alt="" width="" height="" loading="lazy">
+  <section class="seminar layout-seminar">
+    <div class="seminar__inner inner">
+      <div class="seminar__container">
+        <div class="seminar__head">
+          <div class="section-head">
+            <p class="section-head__en">Morning seminar</p>
+            <h2 class="section-head__ja">初めての方におすすめ！モーニングセミナー</h2>
           </div>
         </div>
-        <dl class="seminar-card__info">
-          <div class="seminar-card__info-wrap text">
-            <dt class="seminar-card__info-term">日時</dt>
-            <dd class="seminar-card__info-description">12月19日（火）</dd>
-          </div>
-          <div class="seminar-card__info-wrap text">
-            <dt class="seminar-card__info-term">会場</dt>
-            <dd class="seminar-card__info-description">下越北倫理法人会</dd>
-          </div>
-          <div class="seminar-card__info-wrap text">
-            <dt class="seminar-card__info-term">講師</dt>
-            <dd class="seminar-card__info-description">田村 征司／新潟県倫理法人会 相談役／(株)トゥルーワークス 会長</dd>
-          </div>
-        </dl>
-      </li>
-    </ul>
-
-    <!-- カード -->
-    <ul class="about-list">
-      <li class="about-item">
-        <h3 class="about-item__title">会場一覧（単会情報）</h3>
-        <div class="about-item__img">
-          <img src="wp-content/themes/rinri/assets/images/top/about1@2x.webp" alt="" width="" height="" loading="lazy" />
-        </div>
-        <div class="about-item__icon">
-          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="13" viewBox="0 0 25 13">
-            <defs>
-              <clipPath id="a">
-                <rect width="13" height="20" transform="translate(0 0.258)" fill="none" stroke="#c38b79" stroke-width="1" />
-              </clipPath>
-            </defs>
-            <g transform="translate(-638 -975.248)">
-              <ellipse cx="4.5" cy="5" rx="4.5" ry="5" transform="translate(638 977.248)" fill="#c38b79" opacity="0.5" />
-              <g transform="translate(642.742 988.248) rotate(-90)">
-                <g transform="translate(0 0)" clip-path="url(#a)">
-                  <line y1="19.372" transform="translate(6.55 0.201)" fill="none" stroke="#c38b79" stroke-miterlimit="10" stroke-width="1" />
-                  <path d="M0,0S5.282,1.5,6.12,9.1" transform="translate(0.43 10.468)" fill="none" stroke="#c38b79" stroke-miterlimit="10" stroke-width="1" />
-                  <path d="M6.12,0S.838,1.5,0,9.1" transform="translate(6.55 10.468)" fill="none" stroke="#c38b79" stroke-miterlimit="10" stroke-width="1" />
-                </g>
-              </g>
-            </g>
-          </svg>
-        </div>
-      </li>
-    </ul>
-  </div>
-
-  <!-- footer -->
-  <footer class="footer">
-    <div class="footer__inner">
-      <div class="footer__wrapper">
-        <div class="footer__left">
-          <div class="footer__logo">
-            <a href="#" class="logo">
-              <div class="logo__icon">
-                <img src="wp-content/themes/rinri/assets/images/common/logo.svg" alt="Logo" width="" height="" loading="lazy">
-              </div>
-              <div class="logo__title">新潟県倫理法人会</div>
-            </a>
-          </div>
-          <address class="footer__address text">
-            〒955-0092<br>
-            新潟県三条市須頃2丁目13番地<br>
-            パークハイツ須頃　202号室-000
-          </address>
-          <dl class="footer__info text">
-            <div class="footer__info-wrap">
-              <dt class="footer__info-term">tel</dt>
-              <dd class="footer__info-description">0256-35-4466</dd>
-            </div>
-            <div class="footer__info-wrap">
-              <dt class="footer__info-term">fax</dt>
-              <dd class="footer__info-description">0256-47-1023</dd>
-            </div>
-            <div class="footer__info-wrap--delta">
-              <dt class="footer__info-term">E-mail</dt>
-              <dd class="footer__info-description">rinri-ken@tiara.ocn.ne.jp</dd>
-            </div>
-          </dl>
-        </div>
-        <div class="footer__right">
-          <div class="footer__nav">
-            <ul class="footer__nav-lists">
-              <li class="footer__nav-list">はじめての方へ
-                <ul class="footer__nav-items text">
-                  <li class="footer__nav-item"><a href="">・倫理法人会ってどんなところ？</a></li>
-                  <li class="footer__nav-item"><a href="">・活動内容</a>
-                  </li>
-                  <li class="footer__nav-item"><a href="">・会員紹介</a>
-                  </li>
-                </ul>
+        <div class="seminar__list">
+          <div class="seminar__swiper swiper js-seminar-swiper">
+            <ul class="seminar-cards swiper-wrapper">
+              <li class="seminar-card swiper-slide">
+                <div class="seminar-card__head">
+                  <div class="seminar-card__title-wrap">
+                    <h3 class="seminar-card__title">
+                      <span class="seminar-card__title-number">第100回</span><span class="seminar-card__title-text">人生は倫理</span>
+                    </h3>
+                  </div>
+                  <div class="seminar-card__img">
+                    <img src="wp-content/themes/rinri/assets/images/top/seminar1@2x.jpg" alt="" width="" height="" loading="lazy">
+                  </div>
+                </div>
+                <dl class="seminar-card__info">
+                  <div class="seminar-card__info-wrap text">
+                    <dt class="seminar-card__info-term">日時</dt>
+                    <dd class="seminar-card__info-description">12月19日（火）</dd>
+                  </div>
+                  <div class="seminar-card__info-wrap text">
+                    <dt class="seminar-card__info-term">会場</dt>
+                    <dd class="seminar-card__info-description">下越北倫理法人会</dd>
+                  </div>
+                  <div class="seminar-card__info-wrap text">
+                    <dt class="seminar-card__info-term">講師</dt>
+                    <dd class="seminar-card__info-description">田村 征司／新潟県倫理法人会 相談役／(株)トゥルーワークス 会長</dd>
+                  </div>
+                </dl>
               </li>
-              <li class="footer__nav-list">会員の方へ
-                <ul class="footer__nav-items text">
-                  <li class="footer__nav-item"><a href="">・お知らせ一覧</a></li>
-                  <li class="footer__nav-item"><a href="">・セミナー案内</a>
-                  </li>
-                  <li class="footer__nav-item"><a href="">・会報</a>
-                  </li>
-                </ul>
+              <li class="seminar-card swiper-slide">
+                <div class="seminar-card__head">
+                  <div class="seminar-card__title-wrap">
+                    <h3 class="seminar-card__title">
+                      <span class="seminar-card__title-number">第1033回</span><span class="seminar-card__title-text">三条凧合戦と凧屋について</span>
+                    </h3>
+                  </div>
+                  <div class="seminar-card__img">
+                    <img src="wp-content/themes/rinri/assets/images/top/seminar2@2x.jpg" alt="" width="" height="" loading="lazy">
+                  </div>
+                </div>
+                <dl class="seminar-card__info">
+                  <div class="seminar-card__info-wrap text">
+                    <dt class="seminar-card__info-term">日時</dt>
+                    <dd class="seminar-card__info-description">12月19日（火）</dd>
+                  </div>
+                  <div class="seminar-card__info-wrap text">
+                    <dt class="seminar-card__info-term">会場</dt>
+                    <dd class="seminar-card__info-description">新潟万代倫理法人会</dd>
+                  </div>
+                  <div class="seminar-card__info-wrap text">
+                    <dt class="seminar-card__info-term">講師</dt>
+                    <dd class="seminar-card__info-description">須藤 謙一／三条南倫理法人会 ＭＳ委員／須藤凧屋 代表</dd>
+                  </div>
+                </dl>
               </li>
-              <li class="footer__nav-list">倫理法人会について
-                <ul class="footer__nav-items text">
-                  <li class="footer__nav-item"><a href="">・会場一覧</a>
-                  </li>
-                  <li class="footer__nav-item"><a href="">・組織・役員</a>
-                  </li>
-                  <li class="footer__nav-item"><a href="">・委員会</a>
-                  </li>
-                  <li class="footer__nav-item"><a href="">・事務局</a>
-                  </li>
-                </ul>
+              <li class="seminar-card swiper-slide">
+                <div class="seminar-card__head">
+                  <div class="seminar-card__title-wrap">
+                    <h3 class="seminar-card__title">
+                      <span class="seminar-card__title-number">第100回</span><span class="seminar-card__title-text">人生は倫理</span>
+                    </h3>
+                  </div>
+                  <div class="seminar-card__img">
+                    <img src="wp-content/themes/rinri/assets/images/top/seminar1@2x.jpg" alt="" width="" height="" loading="lazy">
+                  </div>
+                </div>
+                <dl class="seminar-card__info">
+                  <div class="seminar-card__info-wrap text">
+                    <dt class="seminar-card__info-term">日時</dt>
+                    <dd class="seminar-card__info-description">12月19日（火）</dd>
+                  </div>
+                  <div class="seminar-card__info-wrap text">
+                    <dt class="seminar-card__info-term">会場</dt>
+                    <dd class="seminar-card__info-description">下越北倫理法人会</dd>
+                  </div>
+                  <div class="seminar-card__info-wrap text">
+                    <dt class="seminar-card__info-term">講師</dt>
+                    <dd class="seminar-card__info-description">田村 征司／新潟県倫理法人会 相談役／(株)トゥルーワークス 会長</dd>
+                  </div>
+                </dl>
               </li>
             </ul>
           </div>
-          <div class="footer__buttons">
-            <div class="footer__button">
-              <a href="#" class="button--white">入会のご案内<div class="button__icon">
-                  <svg class="icon-arrow-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="13" viewBox="0 0 25 13">
-                    <defs>
-                      <clipPath id="a">
-                        <rect width="13" height="20" transform="translate(0 0.258)" fill="none" stroke="#c38b79" stroke-width="1" />
-                      </clipPath>
-                    </defs>
-                    <g transform="translate(-638 -975.248)">
-                      <ellipse cx="4.5" cy="5" rx="4.5" ry="5" transform="translate(638 977.248)" fill="#c38b79" opacity="0.5" />
-                      <g transform="translate(642.742 988.248) rotate(-90)">
-                        <g transform="translate(0 0)" clip-path="url(#a)">
-                          <line y1="19.372" transform="translate(6.55 0.201)" fill="none" stroke="#c38b79" stroke-miterlimit="10" stroke-width="1" />
-                          <path d="M0,0S5.282,1.5,6.12,9.1" transform="translate(0.43 10.468)" fill="none" stroke="#c38b79" stroke-miterlimit="10" stroke-width="1" />
-                          <path d="M6.12,0S.838,1.5,0,9.1" transform="translate(6.55 10.468)" fill="none" stroke="#c38b79" stroke-miterlimit="10" stroke-width="1" />
-                        </g>
-                      </g>
-                    </g>
-                  </svg>
-                </div>
-              </a>
-            </div>
-            <div class="footer__button">
-              <a href="#" class="button--ocher">お問い合わせ<div class="button__icon">
-                  <svg class="icon-arrow-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="13" viewBox="0 0 25 13">
-                    <defs>
-                      <clipPath id="a">
-                        <rect width="13" height="20" transform="translate(0 0.258)" fill="none" stroke="#c38b79" stroke-width="1" />
-                      </clipPath>
-                    </defs>
-                    <g transform="translate(-638 -975.248)">
-                      <ellipse cx="4.5" cy="5" rx="4.5" ry="5" transform="translate(638 977.248)" fill="#c38b79" opacity="0.5" />
-                      <g transform="translate(642.742 988.248) rotate(-90)">
-                        <g transform="translate(0 0)" clip-path="url(#a)">
-                          <line y1="19.372" transform="translate(6.55 0.201)" fill="none" stroke="#c38b79" stroke-miterlimit="10" stroke-width="1" />
-                          <path d="M0,0S5.282,1.5,6.12,9.1" transform="translate(0.43 10.468)" fill="none" stroke="#c38b79" stroke-miterlimit="10" stroke-width="1" />
-                          <path d="M6.12,0S.838,1.5,0,9.1" transform="translate(6.55 10.468)" fill="none" stroke="#c38b79" stroke-miterlimit="10" stroke-width="1" />
-                        </g>
-                      </g>
-                    </g>
-                  </svg>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="footer__links text">
-            <a href="" class="footer__policy">プライバシーポリシー</a>
-            <a href="" class="footer__link">リンク集</a>
-          </div>
+        </div>
+        <div class="seminar__swiper-ui js-seminar-swiper-ui">
+          <div class="seminar__swiper-ui-prev swiper-button-prev"><img src="wp-content/themes/rinri/assets/images/common/icon-prev.svg" alt="前へ" width="" height="" loading="lazy" /></div>
+          <div class="seminar__swiper-ui-next swiper-button-next"><img src="wp-content/themes/rinri/assets/images/common/icon-next.svg" alt="次へ" width="" height="" loading="lazy" /></div>
+          <div class="seminar__swiper-ui-scrollbar swiper-scrollbar"></div>
         </div>
       </div>
-  </footer>
+      <div class="seminar__button">
+        <a href="#" class="button">Read more
+          <div class="button__icon">
+            <?php echo get_template_part("parts/icon-arrow-svg") ?>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
 
+  <section class="about layout-about">
+    <div class="about__inner inner">
+      <div class="about__head">
+        <div class="section-head">
+          <p class="section-head__en">About</p>
+          <h2 class="section-head__ja">倫理法人会について</h2>
+        </div>
+      </div>
+      <div class="about__container">
+        <div class="about__text">
+          <p class="text">倫理法人会は、経営者自身の人となりを見つめ直すきっかけを作ることで自己革新を促し、所属企業の発展あるいは地域社会に貢献することを目的としています。新潟県倫理法人会は、1985年に設立され、現在は県内26法人会に所属する3,000を超える会員数を持つ団体です。</p>
+        </div>
+        <div class="about__body">
+          <ul class="about-list">
+            <li class="about-item">
+              <a class="about-item__link" href="#">
+                <h3 class="about-item__title">会場一覧（単会情報）</h3>
+                <div class="about-item__img">
+                  <img src="wp-content/themes/rinri/assets/images/top/about1@2x.webp" alt="" width="" height="" loading="lazy" />
+                </div>
+                <div class="about-item__icon">
+                  <?php echo get_template_part("parts/icon-arrow-svg") ?>
+                </div>
+              </a>
+            </li>
+            <li class="about-item">
+              <a class="about-item__link" href="#">
+                <h3 class="about-item__title">組織・役員</h3>
+                <div class="about-item__img">
+                  <img src="wp-content/themes/rinri/assets/images/top/about1@2x.webp" alt="" width="" height="" loading="lazy" />
+                </div>
+                <div class="about-item__icon">
+                  <?php echo get_template_part("parts/icon-arrow-svg") ?>
+                </div>
+              </a>
+            </li>
+            <li class="about-item">
+              <a class="about-item__link" href="#">
+                <h3 class="about-item__title">委員会</h3>
+                <div class="about-item__img">
+                  <img src="wp-content/themes/rinri/assets/images/top/about1@2x.webp" alt="" width="" height="" loading="lazy" />
+                </div>
+                <div class="about-item__icon">
+                  <?php echo get_template_part("parts/icon-arrow-svg") ?>
+                </div>
+              </a>
+            </li>
+            <li class="about-item">
+              <a class="about-item__link" href="#">
+                <h3 class="about-item__title">事務局</h3>
+                <div class="about-item__img">
+                  <img src="wp-content/themes/rinri/assets/images/top/about1@2x.webp" alt="" width="" height="" loading="lazy" />
+                </div>
+                <div class="about-item__icon">
+                  <?php echo get_template_part("parts/icon-arrow-svg") ?>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="about__schedule">
+        <div class="about__schedule-head">
+          <div class="section-head">
+            <p class="section-head__en">Seminar schedule</p>
+            <h2 class="section-head__ja">セミナー予定表</h2>
+          </div>
+        </div>
+        <div class="about__schedule-body">
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="join layout-join">
+    <div class="join__inner inner">
+      <div class="join__container">
+        <p class="join__head">倫理法人会で一緒に解決策を学びませんか？</p>
+        <div class="join__text">
+          <p class="text">「会社を変えたい、でもどうすれば…」<br>
+            数多くの経営者が学び合う倫理法人会で、答えが見つかるかもしれません。</p>
+        </div>
+        <div class="join__button">
+          <a href="#" class="button">入会について
+            <div class="button__icon">
+              <?php echo get_template_part("parts/icon-arrow-svg") ?>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
   </div>
+
+  <section class="contact layout-contact">
+    <div class="contact__inner inner">
+      <div class="contact__container">
+        <div class="contact__head">
+          <div class="section-head--white">
+            <p class="section-head__en">Contact</p>
+            <h2 class="section-head__ja">お問い合わせ</h2>
+          </div>
+        </div>
+        <div class="contact__text">
+          <p class="text--white">倫理法人会についてご不明な点があれば、まずはお気軽にご相談ください。</p>
+        </div>
+        <div class="contact__button">
+          <a href="#" class="button">Contact form
+            <div class="button__icon">
+              <?php echo get_template_part("parts/icon-arrow-svg") ?>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
 
 </main>
 

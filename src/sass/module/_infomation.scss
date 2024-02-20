@@ -28,6 +28,7 @@
 }
 
 .infomation__tab-menu-item {
+  cursor: pointer;
 }
 
 .infomation__tab-menu-item.is-active {
@@ -40,9 +41,24 @@
   margin-top: rem(60);
 }
 
-.infomation__tab-content {
+.infomation__tab-content-wrap {
   flex: 1;
 }
 
-.info-cards {
+.infomation__tab-content {
+  display: none;
+}
+
+.infomation__tab-content.is-active {
+  display: grid;
+  animation: fade 0.3s ease;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }

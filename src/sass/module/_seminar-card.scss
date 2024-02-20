@@ -49,18 +49,27 @@
 
 .seminar-card__info {
   padding: rem(24) rem(23) rem(23) rem(48);
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 
 .seminar-card__info-wrap {
   display: flex;
-  gap: rem(32);
+  gap: rem(10);
 }
 
 .seminar-card__info-term {
+  flex: 1;
   font-weight: $medium;
 }
 
+.seminar-card__info-wrap:last-child {
+  flex-grow: 1;
+}
+
 .seminar-card__info-description {
+  width: calc(460 / 525 * 100%);
 }
 
 .seminar-card__info-wrap:not(:first-child) {

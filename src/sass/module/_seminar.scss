@@ -1,0 +1,139 @@
+@use "global" as *;
+
+.seminar {
+}
+
+.seminar__inner {
+}
+
+.inner {
+}
+
+.seminar__container {
+  position: relative;
+}
+
+.seminar__head {
+}
+
+.seminar__list {
+  margin-top: rem(56);
+}
+
+.seminar__swiper {
+  margin-right: calc(50% - 50vw);
+}
+
+.seminar__swiper .swiper-slide {
+  width: rem(596);
+  height: auto;
+}
+
+.swiper {
+}
+
+.jas-seminar-swiper {
+}
+
+.seminar-cards {
+}
+
+.swiper-wrapper {
+}
+
+.seminar-card {
+}
+
+.swiper-slide {
+}
+
+.seminar-card__head {
+}
+
+.seminar-card__title-wrap {
+}
+
+.seminar-card__title {
+}
+
+.seminar-card__title-number {
+}
+
+.seminar-card__title-text {
+}
+
+.seminar-card__img {
+}
+
+.seminar-card__info {
+}
+
+.seminar-card__info-wrap {
+}
+
+.text {
+}
+
+.seminar-card__info-term {
+}
+
+.seminar-card__info-description {
+}
+
+.seminar__swiper-ui {
+}
+
+.js-seminar-swiper-ui {
+}
+
+.seminar__swiper-ui-prev {
+}
+
+.swiper-button-prev {
+}
+
+.seminar__swiper-ui-next {
+}
+
+.swiper-button-next {
+}
+
+.seminar__swiper-ui-scrollbar {
+}
+
+.seminar__swiper-ui {
+  margin-top: rem(34);
+  display: flex;
+  align-items: center;
+}
+
+.seminar__swiper-ui .swiper-scrollbar {
+  position: initial;
+  margin-left: auto;
+  height: 1px;
+  width: calc(1060 / 1232 * 100%);
+  background-color: rgba($base, 0.3);
+}
+
+.seminar__swiper-ui .swiper-scrollbar-drag {
+  width: calc(318 / 1060 * 100%);
+  background-color: $base;
+}
+
+.seminar__swiper-ui .swiper-button-prev,
+.seminar__swiper-ui .swiper-button-next {
+  position: initial;
+  margin-top: initial;
+  width: rem(40);
+  height: rem(40);
+}
+
+.seminar__swiper-ui .swiper-button-next {
+  margin-left: rem(24);
+}
+
+.seminar__button {
+  margin-top: rem(60);
+  display: flex;
+  justify-content: center;
+}

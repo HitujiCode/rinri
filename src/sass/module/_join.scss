@@ -1,0 +1,55 @@
+@use "global" as *;
+
+.join {
+  position: relative;
+}
+
+.join::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  left: calc(50vw - rem(600));
+  width: rem(376);
+  height: rem(217);
+  background-image: url("./../images/top/join1@2x.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.join::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: calc(50vw - rem(600));
+  width: rem(376);
+  height: rem(217);
+  background-image: url("./../images/top/join2@2x.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.join__inner.inner {
+}
+
+.join__container {
+  text-align: center;
+}
+
+.join__head {
+  font-size: rem(32);
+  font-weight: $regular;
+  line-height: calc(40 / 32);
+}
+
+.join__text {
+  margin-top: rem(56);
+}
+
+.join__button {
+  margin-top: rem(60);
+  display: flex;
+  justify-content: center;
+}

@@ -1,0 +1,25 @@
+@use "global" as *;
+
+.about {
+}
+
+.about__inner.inner {
+}
+
+.about__head {
+}
+
+.about__container {
+  margin-top: rem(56);
+  display: flex;
+  gap: min((146/1232 * 100vw), rem(146));
+}
+
+.about__text {
+  width: calc(384 / 1232 * 100%);
+  text-align: justify;
+}
+
+.about__body {
+  flex: 1;
+}

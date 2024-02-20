@@ -32,6 +32,12 @@
   width: rem(278);
 }
 
+.member__swiper-ui {
+  margin-top: rem(34);
+  display: flex;
+  align-items: center;
+}
+
 .member__swiper-ui .swiper-scrollbar {
   position: initial;
   margin-left: auto;
@@ -43,12 +49,6 @@
 .member__swiper-ui .swiper-scrollbar-drag {
   width: calc(318 / 1060 * 100%);
   background-color: $base;
-}
-
-.member__swiper-ui {
-  margin-top: rem(34);
-  display: flex;
-  align-items: center;
 }
 
 .member__swiper-ui .swiper-button-prev,

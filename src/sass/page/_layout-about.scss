@@ -1,0 +1,7 @@
+@use "global" as *;
+
+.layout-about {
+  margin-top: rem(120);
+  padding: rem(120) 0;
+  background-image: linear-gradient(to bottom, $ivory 64.53%, $white);
+}

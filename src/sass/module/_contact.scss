@@ -1,0 +1,43 @@
+@use "global" as *;
+
+.contact {
+  background-image: url("./../images/top/contact@2x.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.contact::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba($black, 0.5);
+}
+
+.contact__inner {
+}
+
+.inner {
+}
+
+.contact__container {
+  position: relative;
+  text-align: center;
+}
+
+.contact__head {
+}
+
+.contact__text {
+  margin-top: rem(56);
+}
+
+.contact__button {
+  margin-top: rem(46);
+  display: flex;
+  justify-content: center;
+}
