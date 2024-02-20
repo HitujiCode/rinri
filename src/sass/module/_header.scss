@@ -68,6 +68,17 @@
   padding-right: min((27/1440 * 100vw), rem(27));
 }
 
+.header__nav-item span::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px;
+  bottom: -2px;
+  left: 0;
+  background-color: $base;
+  transition: width 0.3s ease;
+}
+
 .header__nav-item span::after {
   position: absolute;
   content: "";
@@ -82,8 +93,11 @@
 }
 
 .header__nav-item.header__nav-item--noicon span {
-  position: initial;
   padding-right: initial;
+}
+
+.header__nav-item.header__nav-item--noicon span::after {
+  content: none;
 }
 
 .header__nav-item.header__nav-item--contact {
@@ -208,4 +222,7 @@
 }
 
 @media (hover: hover) {
+  .header__nav-item:hover span::before {
+    width: 100%;
+  }
 }

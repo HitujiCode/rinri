@@ -20,6 +20,7 @@
   width: rem(25);
   height: rem(13);
   filter: brightness(0) invert(1);
+  transition: transform 0.3s ease;
 }
 
 .button--red {
@@ -116,16 +117,7 @@
 }
 
 @media (hover: hover) {
-  .button:hover {
-    background-color: $base;
-  }
-}
-
-@keyframes test {
-  0% {
-    cx: 4.5;
-  }
-  100% {
-    cx: 20.5;
+  .button:hover .button__icon {
+    transform: translateX(rem(10));
   }
 }

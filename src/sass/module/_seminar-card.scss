@@ -2,8 +2,13 @@
 
 .seminar-card {
   display: flex;
-  flex-direction: column;
   background-color: $ivory;
+}
+
+.seminar-card__link {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 
 .seminar-card__head {

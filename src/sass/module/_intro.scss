@@ -4,6 +4,21 @@
   position: relative;
 }
 
+.intro::before {
+  content: "rinri hojinkai\aniigata";
+  white-space: pre;
+  position: absolute;
+  top: rem(50);
+  left: calc(50 / 1440 * 100vw);
+  text-transform: uppercase;
+  font-size: rem(80);
+  font-weight: $medium;
+  font-family: $en-font;
+  color: $white;
+  line-height: calc(100 / 80);
+  letter-spacing: 0.1em;
+}
+
 .intro__inner.inner {
   @include mq("md") {
     width: 100%;
@@ -13,25 +28,10 @@
 .intro__container {
   display: flex;
   gap: min((130 / 1232 * 100vw), rem(130));
-  position: relative;
+  // position: relative;
   @include mq("md") {
     flex-direction: column;
   }
-}
-
-.intro__container::before {
-  content: "rinri hojinkai\aniigata";
-  white-space: pre;
-  position: absolute;
-  top: rem(-140);
-  left: rem(-54);
-  text-transform: uppercase;
-  font-size: rem(80);
-  font-weight: $medium;
-  font-family: $en-font;
-  color: $white;
-  line-height: calc(100 / 80);
-  letter-spacing: 0.1em;
 }
 
 .intro__img {

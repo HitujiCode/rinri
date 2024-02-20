@@ -374,82 +374,88 @@
           <div class="seminar__swiper swiper js-seminar-swiper">
             <ul class="seminar-cards swiper-wrapper">
               <li class="seminar-card swiper-slide">
-                <div class="seminar-card__head">
-                  <div class="seminar-card__title-wrap">
-                    <h3 class="seminar-card__title">
-                      <span class="seminar-card__title-number">第100回</span><span class="seminar-card__title-text">人生は倫理</span>
-                    </h3>
+                <a class="seminar-card__link" href="#">
+                  <div class="seminar-card__head">
+                    <div class="seminar-card__title-wrap">
+                      <h3 class="seminar-card__title">
+                        <span class="seminar-card__title-number">第100回</span><span class="seminar-card__title-text">人生は倫理</span>
+                      </h3>
+                    </div>
+                    <div class="seminar-card__img">
+                      <img src="wp-content/themes/rinri/assets/images/top/seminar1@2x.jpg" alt="" width="" height="" loading="lazy">
+                    </div>
                   </div>
-                  <div class="seminar-card__img">
-                    <img src="wp-content/themes/rinri/assets/images/top/seminar1@2x.jpg" alt="" width="" height="" loading="lazy">
-                  </div>
-                </div>
-                <dl class="seminar-card__info">
-                  <div class="seminar-card__info-wrap">
-                    <dt class="seminar-card__info-term">日時</dt>
-                    <dd class="seminar-card__info-description">12月19日（火）</dd>
-                  </div>
-                  <div class="seminar-card__info-wrap">
-                    <dt class="seminar-card__info-term">会場</dt>
-                    <dd class="seminar-card__info-description">下越北倫理法人会</dd>
-                  </div>
-                  <div class="seminar-card__info-wrap">
-                    <dt class="seminar-card__info-term">講師</dt>
-                    <dd class="seminar-card__info-description">田村 征司／新潟県倫理法人会 相談役／(株)トゥルーワークス 会長</dd>
-                  </div>
-                </dl>
+                  <dl class="seminar-card__info">
+                    <div class="seminar-card__info-wrap">
+                      <dt class="seminar-card__info-term">日時</dt>
+                      <dd class="seminar-card__info-description">12月19日（火）</dd>
+                    </div>
+                    <div class="seminar-card__info-wrap">
+                      <dt class="seminar-card__info-term">会場</dt>
+                      <dd class="seminar-card__info-description">下越北倫理法人会</dd>
+                    </div>
+                    <div class="seminar-card__info-wrap">
+                      <dt class="seminar-card__info-term">講師</dt>
+                      <dd class="seminar-card__info-description">田村 征司／新潟県倫理法人会 相談役／(株)トゥルーワークス 会長</dd>
+                    </div>
+                  </dl>
+                </a>
               </li>
               <li class="seminar-card swiper-slide">
-                <div class="seminar-card__head">
-                  <div class="seminar-card__title-wrap">
-                    <h3 class="seminar-card__title">
-                      <span class="seminar-card__title-number">第1033回</span><span class="seminar-card__title-text">三条凧合戦と凧屋について</span>
-                    </h3>
+                <a class="seminar-card__link" href="#">
+                  <div class="seminar-card__head">
+                    <div class="seminar-card__title-wrap">
+                      <h3 class="seminar-card__title">
+                        <span class="seminar-card__title-number">第1033回</span><span class="seminar-card__title-text">三条凧合戦と凧屋について</span>
+                      </h3>
+                    </div>
+                    <div class="seminar-card__img">
+                      <img src="wp-content/themes/rinri/assets/images/top/seminar2@2x.jpg" alt="" width="" height="" loading="lazy">
+                    </div>
                   </div>
-                  <div class="seminar-card__img">
-                    <img src="wp-content/themes/rinri/assets/images/top/seminar2@2x.jpg" alt="" width="" height="" loading="lazy">
-                  </div>
-                </div>
-                <dl class="seminar-card__info">
-                  <div class="seminar-card__info-wrap">
-                    <dt class="seminar-card__info-term">日時</dt>
-                    <dd class="seminar-card__info-description">12月19日（火）</dd>
-                  </div>
-                  <div class="seminar-card__info-wrap">
-                    <dt class="seminar-card__info-term">会場</dt>
-                    <dd class="seminar-card__info-description">新潟万代倫理法人会</dd>
-                  </div>
-                  <div class="seminar-card__info-wrap">
-                    <dt class="seminar-card__info-term">講師</dt>
-                    <dd class="seminar-card__info-description">須藤 謙一／三条南倫理法人会 ＭＳ委員／須藤凧屋 代表</dd>
-                  </div>
-                </dl>
+                  <dl class="seminar-card__info">
+                    <div class="seminar-card__info-wrap">
+                      <dt class="seminar-card__info-term">日時</dt>
+                      <dd class="seminar-card__info-description">12月19日（火）</dd>
+                    </div>
+                    <div class="seminar-card__info-wrap">
+                      <dt class="seminar-card__info-term">会場</dt>
+                      <dd class="seminar-card__info-description">新潟万代倫理法人会</dd>
+                    </div>
+                    <div class="seminar-card__info-wrap">
+                      <dt class="seminar-card__info-term">講師</dt>
+                      <dd class="seminar-card__info-description">須藤 謙一／三条南倫理法人会 ＭＳ委員／須藤凧屋 代表</dd>
+                    </div>
+                  </dl>
+                </a>
               </li>
               <li class="seminar-card swiper-slide">
-                <div class="seminar-card__head">
-                  <div class="seminar-card__title-wrap">
-                    <h3 class="seminar-card__title">
-                      <span class="seminar-card__title-number">第100回</span><span class="seminar-card__title-text">人生は倫理</span>
-                    </h3>
+                <a class="seminar-card__link" href="#">
+                  <div class="seminar-card__head">
+                    <div class="seminar-card__title-wrap">
+                      <h3 class="seminar-card__title">
+                        <span class="seminar-card__title-number">第100回</span><span class="seminar-card__title-text">人生は倫理</span>
+                      </h3>
+                    </div>
+                    <div class="seminar-card__img">
+                      <img src="wp-content/themes/rinri/assets/images/top/seminar1@2x.jpg" alt="" width="" height="" loading="lazy">
+                    </div>
                   </div>
-                  <div class="seminar-card__img">
-                    <img src="wp-content/themes/rinri/assets/images/top/seminar1@2x.jpg" alt="" width="" height="" loading="lazy">
-                  </div>
-                </div>
-                <dl class="seminar-card__info">
-                  <div class="seminar-card__info-wrap">
-                    <dt class="seminar-card__info-term">日時</dt>
-                    <dd class="seminar-card__info-description">12月19日（火）</dd>
-                  </div>
-                  <div class="seminar-card__info-wrap">
-                    <dt class="seminar-card__info-term">会場</dt>
-                    <dd class="seminar-card__info-description">下越北倫理法人会</dd>
-                  </div>
-                  <div class="seminar-card__info-wrap">
-                    <dt class="seminar-card__info-term">講師</dt>
-                    <dd class="seminar-card__info-description">田村 征司／新潟県倫理法人会 相談役／(株)トゥルーワークス 会長</dd>
-                  </div>
-                </dl>
+                  <dl class="seminar-card__info">
+                    <div class="seminar-card__info-wrap">
+                      <dt class="seminar-card__info-term">日時</dt>
+                      <dd class="seminar-card__info-description">12月19日（火）</dd>
+                    </div>
+                    <div class="seminar-card__info-wrap">
+                      <dt class="seminar-card__info-term">会場</dt>
+                      <dd class="seminar-card__info-description">下越北倫理法人会</dd>
+                    </div>
+                    <div class="seminar-card__info-wrap">
+                      <dt class="seminar-card__info-term">講師</dt>
+                      <dd class="seminar-card__info-description">田村 征司／新潟県倫理法人会 相談役／(株)トゥルーワークス 会長</dd>
+                    </div>
+                  </dl>
+                </a>
               </li>
             </ul>
           </div>

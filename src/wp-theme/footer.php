@@ -35,31 +35,31 @@
           <ul class="footer__nav-lists">
             <li class="footer__nav-list">はじめての方へ
               <ul class="footer__nav-items">
-                <li class="footer__nav-item"><a href="#">・倫理法人会ってどんなところ？</a></li>
-                <li class="footer__nav-item"><a href="#">・活動内容</a>
+                <li class="footer__nav-item"><a href="#"><span>倫理法人会ってどんなところ？</span></a></li>
+                <li class="footer__nav-item"><a href="#"><span>活動内容</span></a>
                 </li>
-                <li class="footer__nav-item"><a href="#">・会員紹介</a>
+                <li class="footer__nav-item"><a href="#"><span>会員紹介</span></a>
                 </li>
               </ul>
             </li>
             <li class="footer__nav-list">会員の方へ
               <ul class="footer__nav-items text">
-                <li class="footer__nav-item"><a href="#">・お知らせ一覧</a></li>
-                <li class="footer__nav-item"><a href="#">・セミナー案内</a>
+                <li class="footer__nav-item"><a href="#"><span>お知らせ一覧</span></a></li>
+                <li class="footer__nav-item"><a href="#"><span>セミナー案内</span></a>
                 </li>
-                <li class="footer__nav-item"><a href="#">・会報</a>
+                <li class="footer__nav-item"><a href="#"><span>会報</span></a>
                 </li>
               </ul>
             </li>
             <li class="footer__nav-list">倫理法人会について
               <ul class="footer__nav-items text">
-                <li class="footer__nav-item"><a href="#">・会場一覧</a>
+                <li class="footer__nav-item"><a href="#"><span>会場一覧</span></a>
                 </li>
-                <li class="footer__nav-item"><a href="#">・組織・役員</a>
+                <li class="footer__nav-item"><a href="#"><span>組織・役員</span></a>
                 </li>
-                <li class="footer__nav-item"><a href="#">・委員会</a>
+                <li class="footer__nav-item"><a href="#"><span>委員会</span></a>
                 </li>
-                <li class="footer__nav-item"><a href="#">・事務局</a>
+                <li class="footer__nav-item"><a href="#"><span>事務局</span></a>
                 </li>
               </ul>
             </li>
@@ -68,51 +68,19 @@
         <div class="footer__buttons">
           <div class="footer__button">
             <a href="#" class="button--white">入会のご案内<div class="button__icon">
-                <svg class="icon-arrow-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="13" viewBox="0 0 25 13">
-                  <defs>
-                    <clipPath id="a">
-                      <rect width="13" height="20" transform="translate(0 0.258)" fill="none" stroke="#c38b79" stroke-width="1" />
-                    </clipPath>
-                  </defs>
-                  <g transform="translate(-638 -975.248)">
-                    <ellipse cx="4.5" cy="5" rx="4.5" ry="5" transform="translate(638 977.248)" fill="#c38b79" opacity="0.5" />
-                    <g transform="translate(642.742 988.248) rotate(-90)">
-                      <g transform="translate(0 0)" clip-path="url(#a)">
-                        <line y1="19.372" transform="translate(6.55 0.201)" fill="none" stroke="#c38b79" stroke-miterlimit="10" stroke-width="1" />
-                        <path d="M0,0S5.282,1.5,6.12,9.1" transform="translate(0.43 10.468)" fill="none" stroke="#c38b79" stroke-miterlimit="10" stroke-width="1" />
-                        <path d="M6.12,0S.838,1.5,0,9.1" transform="translate(6.55 10.468)" fill="none" stroke="#c38b79" stroke-miterlimit="10" stroke-width="1" />
-                      </g>
-                    </g>
-                  </g>
-                </svg>
+                <?php echo get_template_part("parts/icon-arrow-svg") ?>
               </div>
             </a>
           </div>
           <div class="footer__button">
             <a href="#" class="button--ocher">お問い合わせ<div class="button__icon">
-                <svg class="icon-arrow-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="13" viewBox="0 0 25 13">
-                  <defs>
-                    <clipPath id="a">
-                      <rect width="13" height="20" transform="translate(0 0.258)" fill="none" stroke="#c38b79" stroke-width="1" />
-                    </clipPath>
-                  </defs>
-                  <g transform="translate(-638 -975.248)">
-                    <ellipse cx="4.5" cy="5" rx="4.5" ry="5" transform="translate(638 977.248)" fill="#c38b79" opacity="0.5" />
-                    <g transform="translate(642.742 988.248) rotate(-90)">
-                      <g transform="translate(0 0)" clip-path="url(#a)">
-                        <line y1="19.372" transform="translate(6.55 0.201)" fill="none" stroke="#c38b79" stroke-miterlimit="10" stroke-width="1" />
-                        <path d="M0,0S5.282,1.5,6.12,9.1" transform="translate(0.43 10.468)" fill="none" stroke="#c38b79" stroke-miterlimit="10" stroke-width="1" />
-                        <path d="M6.12,0S.838,1.5,0,9.1" transform="translate(6.55 10.468)" fill="none" stroke="#c38b79" stroke-miterlimit="10" stroke-width="1" />
-                      </g>
-                    </g>
-                  </g>
-                </svg>
+                <?php echo get_template_part("parts/icon-arrow-svg") ?>
               </div>
             </a>
           </div>
         </div>
         <div class="footer__links text">
-          <a href="#" class="footer__policy">プライバシーポリシー</a>
+          <a href="#" class="footer__link">プライバシーポリシー</a>
           <a href="#" class="footer__link">リンク集</a>
         </div>
       </div>
