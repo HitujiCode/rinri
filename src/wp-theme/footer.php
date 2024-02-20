@@ -1,5 +1,5 @@
 <footer class="footer">
-  <div class="footer__inner">
+  <div class="footer__inner inner">
     <div class="footer__wrapper">
       <div class="footer__left">
         <div class="footer__logo">
@@ -13,7 +13,7 @@
         <address class="footer__address text">
           〒955-0092<br>
           新潟県三条市須頃2丁目13番地<br>
-          パークハイツ須頃　202号室-000
+          パークハイツ須頃　202号室
         </address>
         <dl class="footer__info text">
           <div class="footer__info-wrap">
@@ -34,7 +34,7 @@
         <div class="footer__nav">
           <ul class="footer__nav-lists">
             <li class="footer__nav-list">はじめての方へ
-              <ul class="footer__nav-items text">
+              <ul class="footer__nav-items">
                 <li class="footer__nav-item"><a href="#">・倫理法人会ってどんなところ？</a></li>
                 <li class="footer__nav-item"><a href="#">・活動内容</a>
                 </li>

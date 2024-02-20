@@ -44,6 +44,7 @@
 
 .header__nav-items {
   display: flex;
+  align-items: center;
   height: inherit;
 }
 
@@ -51,36 +52,28 @@
   height: inherit;
 }
 
-.header__nav-item.header__nav-item--contact {
-  margin-left: rem(56);
-  margin-left: min((56/1440 * 100vw), rem(56));
-  display: flex;
-  align-items: center;
-}
-
 .header__nav-item a {
   padding: 0 min((24/1440 * 100vw), rem(24));
   height: inherit;
   display: flex;
   align-items: center;
-  font-size: rem(16);
   font-size: clamp(10px, (16/1440 * 100vw), rem(24));
   font-weight: $regular;
+  color: $black;
   line-height: 1;
 }
 
 .header__nav-item span {
   position: relative;
-  padding-right: rem(22);
-  padding-right: min((22/1440 * 100vw), rem(22));
+  padding-right: min((27/1440 * 100vw), rem(27));
 }
 
 .header__nav-item span::after {
   position: absolute;
   content: "";
-  width: rem(10);
-  height: rem(10);
-  display: inline-block;
+  width: rem(15);
+  height: rem(15);
+  top: rem(-3);
   right: 0;
   background-image: url(./../images/common/icon-down-arrow.svg);
   background-repeat: no-repeat;
@@ -88,8 +81,18 @@
   background-size: contain;
 }
 
+.header__nav-item.header__nav-item--noicon span {
+  position: initial;
+  padding-right: initial;
+}
+
+.header__nav-item.header__nav-item--contact {
+  margin-left: min((56/1440 * 100vw), rem(56));
+  display: flex;
+  align-items: center;
+}
+
 .header__nav-item.header__nav-item--contact a {
-  padding: 0 rem(59);
   padding: 0 min((59/1440 * 100vw), rem(59));
   position: relative;
   color: $white;
@@ -202,4 +205,7 @@
   letter-spacing: 0.05em;
   color: $white;
   text-align: center;
+}
+
+@media (hover: hover) {
 }

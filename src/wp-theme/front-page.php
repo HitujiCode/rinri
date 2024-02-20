@@ -385,15 +385,15 @@
                   </div>
                 </div>
                 <dl class="seminar-card__info">
-                  <div class="seminar-card__info-wrap text">
+                  <div class="seminar-card__info-wrap">
                     <dt class="seminar-card__info-term">日時</dt>
                     <dd class="seminar-card__info-description">12月19日（火）</dd>
                   </div>
-                  <div class="seminar-card__info-wrap text">
+                  <div class="seminar-card__info-wrap">
                     <dt class="seminar-card__info-term">会場</dt>
                     <dd class="seminar-card__info-description">下越北倫理法人会</dd>
                   </div>
-                  <div class="seminar-card__info-wrap text">
+                  <div class="seminar-card__info-wrap">
                     <dt class="seminar-card__info-term">講師</dt>
                     <dd class="seminar-card__info-description">田村 征司／新潟県倫理法人会 相談役／(株)トゥルーワークス 会長</dd>
                   </div>
@@ -411,15 +411,15 @@
                   </div>
                 </div>
                 <dl class="seminar-card__info">
-                  <div class="seminar-card__info-wrap text">
+                  <div class="seminar-card__info-wrap">
                     <dt class="seminar-card__info-term">日時</dt>
                     <dd class="seminar-card__info-description">12月19日（火）</dd>
                   </div>
-                  <div class="seminar-card__info-wrap text">
+                  <div class="seminar-card__info-wrap">
                     <dt class="seminar-card__info-term">会場</dt>
                     <dd class="seminar-card__info-description">新潟万代倫理法人会</dd>
                   </div>
-                  <div class="seminar-card__info-wrap text">
+                  <div class="seminar-card__info-wrap">
                     <dt class="seminar-card__info-term">講師</dt>
                     <dd class="seminar-card__info-description">須藤 謙一／三条南倫理法人会 ＭＳ委員／須藤凧屋 代表</dd>
                   </div>
@@ -437,15 +437,15 @@
                   </div>
                 </div>
                 <dl class="seminar-card__info">
-                  <div class="seminar-card__info-wrap text">
+                  <div class="seminar-card__info-wrap">
                     <dt class="seminar-card__info-term">日時</dt>
                     <dd class="seminar-card__info-description">12月19日（火）</dd>
                   </div>
-                  <div class="seminar-card__info-wrap text">
+                  <div class="seminar-card__info-wrap">
                     <dt class="seminar-card__info-term">会場</dt>
                     <dd class="seminar-card__info-description">下越北倫理法人会</dd>
                   </div>
-                  <div class="seminar-card__info-wrap text">
+                  <div class="seminar-card__info-wrap">
                     <dt class="seminar-card__info-term">講師</dt>
                     <dd class="seminar-card__info-description">田村 征司／新潟県倫理法人会 相談役／(株)トゥルーワークス 会長</dd>
                   </div>
@@ -533,13 +533,79 @@
       </div>
       <div class="about__schedule">
         <div class="about__schedule-head">
-          <div class="section-head">
+          <div class="section-head--delta">
             <p class="section-head__en">Seminar schedule</p>
             <h2 class="section-head__ja">セミナー予定表</h2>
           </div>
         </div>
         <div class="about__schedule-body">
-          
+          <table class="schedule-date js-schedule-date">
+            <tbody>
+              <tr>
+                <th>月</th>
+                <th>火</th>
+                <th>水</th>
+                <th>木</th>
+                <th>金</th>
+              </tr>
+              <tr>
+                <td class="schedule-date__blue">新潟万代</td>
+                <td class="schedule-date__blue">新潟万代</td>
+                <td class="schedule-date__blue">新潟万代</td>
+                <td class="schedule-date__blue">新潟万代</td>
+                <td class="schedule-date__blue">新潟万代</td>
+              </tr>
+              <tr>
+                <td class="schedule-date__blue">新潟西</td>
+                <td class="schedule-date__blue">新潟西</td>
+                <td class="schedule-date__blue">新潟西</td>
+                <td class="schedule-date__blue">新潟西</td>
+                <td class="schedule-date__blue">新潟西</td>
+              </tr>
+              <tr>
+                <td class="schedule-date__darkblue">下越北</td>
+                <td class="schedule-date__darkblue">下越北</td>
+                <td class="schedule-date__darkblue">下越北</td>
+                <td class="schedule-date__darkblue">下越北</td>
+                <td class="schedule-date__darkblue">下越北</td>
+              </tr>
+              <tr>
+                <td class="schedule-date__yellow">三条南</td>
+                <td class="schedule-date__yellow">三条南</td>
+                <td class="schedule-date__yellow">三条南</td>
+                <td class="schedule-date__yellow">三条南</td>
+                <td class="schedule-date__yellow">三条南</td>
+              </tr>
+              <tr>
+                <td class="schedule-date__yellow">燕中央</td>
+                <td class="schedule-date__yellow">燕中央</td>
+                <td class="schedule-date__yellow">燕中央</td>
+                <td class="schedule-date__yellow">燕中央</td>
+                <td class="schedule-date__yellow">燕中央</td>
+              </tr>
+              <tr>
+                <td class="schedule-date__purple">長岡市</td>
+                <td class="schedule-date__purple">長岡市</td>
+                <td class="schedule-date__purple">長岡市</td>
+                <td class="schedule-date__purple">長岡市</td>
+                <td class="schedule-date__purple">長岡市</td>
+              </tr>
+              <tr>
+                <td class="schedule-date__violet">十日町市</td>
+                <td class="schedule-date__violet">十日町市</td>
+                <td class="schedule-date__violet">十日町市</td>
+                <td class="schedule-date__violet">十日町市</td>
+                <td class="schedule-date__violet">十日町市</td>
+              </tr>
+              <tr>
+                <td class="schedule-date__limegreen">妙高市</td>
+                <td class="schedule-date__limegreen">妙高市</td>
+                <td class="schedule-date__limegreen">妙高市</td>
+                <td class="schedule-date__limegreen">妙高市</td>
+                <td class="schedule-date__limegreen">妙高市</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
     </div>

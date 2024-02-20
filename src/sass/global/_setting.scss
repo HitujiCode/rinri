@@ -48,8 +48,15 @@ $bg-black: #120e19;
 $lightgray: #eaeaeb;
 $lightgray2: #eaeaea;
 $bg-light: #f8f8f8;
+$date-blue: #5a8ae5;
+$date-darkblue: #6687aa;
+$date-yellow: #fec248;
+$date-purple: #785fb0;
+$date-violet: #b30b73;
+$date-limegreen: #a4d60a;
 
 body {
   font-family: $mincho-font;
   font-optical-sizing: auto;
+  color: $font;
 }

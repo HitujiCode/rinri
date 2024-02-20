@@ -19,7 +19,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
   <!-- css -->
-  <<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="wp-content/themes/rinri/assets/css/style.css">
   <!-- js -->
   <script defer src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
@@ -44,7 +44,7 @@
           <li class="header__nav-item">
             <a href="#"><span>はじめての方へ</span></a>
           </li>
-          <li class="header__nav-item">
+          <li class="header__nav-item header__nav-item--noicon">
             <a href="#"><span>入会案内</span></a>
           </li>
           <li class="header__nav-item">
@@ -54,7 +54,7 @@
             <a href="#"><span>倫理法人会について</span></a>
           </li>
           <li class="header__nav-item header__nav-item--contact">
-            <a href="#" target="_blank" rel="noopener">お問い合わせ</a>
+            <a href="#">お問い合わせ</a>
           </li>
         </ul>
       </nav>

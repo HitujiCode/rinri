@@ -8,41 +8,84 @@
 
 .guide__items {
   display: flex;
-}
-
-.guide__item,
-.guide__item:nth-child(even) {
-  flex: 1;
-  padding-top: rem(92);
-  padding-bottom: rem(88);
+  border-top: 1px solid $lightgray;
+  @include mq("md") {
+    flex-direction: column;
+  }
 }
 
 .guide__item {
+  flex: 1;
+  padding-top: rem(85);
+  padding-bottom: rem(94);
   padding-left: calc(70 / 1440 * 100%);
   padding-right: calc(75 / 1440 * 100%);
+  background-image: url(../images/top/hover-bg@2x.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
 }
 
 .guide__item:nth-child(even) {
   padding-left: calc(75 / 1440 * 100%);
   padding-right: calc(70 / 1440 * 100%);
+  border-left: 1px solid $lightgray;
+}
+
+.guide__item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: $white;
+  transition: background-color 0.3s ease;
 }
 
 .guide__item-link {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .guide__item-icon {
-  width: rem(25);
-  height: rem(13);
+  width: rem(43);
+  height: rem(23);
+  transition: transform 0.3s ease;
 }
 
 .guide__item-icon svg *[stroke] {
   stroke: $darkbrown;
+  transition: stroke 0.3s ease;
 }
 
 .guide__item-icon ellipse {
   fill: $ivory;
   opacity: 1;
+  transition: fill 0.3s ease;
+}
+
+@media (hover: hover) {
+  .guide__item:hover::before {
+    background-color: rgba($black, 0.5);
+  }
+
+  .guide__item:hover .section-head__ja {
+    color: $white;
+  }
+
+  .guide__item:hover .guide__item-icon {
+    transform: translateX(rem(10));
+  }
+
+  .guide__item:hover .guide__item-icon svg *[stroke] {
+    stroke: $white;
+  }
+
+  .guide__item:hover .guide__item-icon ellipse {
+    fill: rgba($white, 0.5);
+  }
 }

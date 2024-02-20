@@ -1,13 +1,18 @@
 @use "global" as *;
 
 .about-item {
+  border-bottom: 1px solid $yellow;
+  transition: background-color 0.3s ease;
+}
+
+.about-item:first-child {
+  border-top: 1px solid $yellow;
 }
 
 .about-item__link {
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid $yellow;
-  padding: rem(52) 0;
+  padding: rem(56) rem(10) rem(56) rem(20);
   position: relative;
 }
 
@@ -21,7 +26,7 @@
   width: rem(300);
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: calc(50% - 16px);
   transform: translateY(-50%);
   visibility: hidden;
   opacity: 0;
@@ -37,20 +42,14 @@
   object-fit: cover;
 }
 
-@media (hover: hover) {
-  .about-item:hover .about-item__img {
-    visibility: visible;
-    opacity: 1;
-  }
-}
-
 .about-item__icon {
-  width: rem(25);
-  height: rem(13);
+  width: rem(43);
+  height: rem(23);
+  transition: transform 0.3s ease;
 }
 
 .about-item__icon svg {
-  aspect-ratio: 25/13;
+  aspect-ratio: 43/23;
   width: 100%;
   height: 100%;
   object-fit: contain;
@@ -63,4 +62,19 @@
 .about-item__icon ellipse {
   fill: $yellow;
   opacity: 1;
+}
+
+@media (hover: hover) {
+  .about-item:hover {
+    background-color: rgba($base, 0.1);
+  }
+
+  .about-item:hover .about-item__img {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .about-item:hover .about-item__icon {
+    transform: translateX(rem(11));
+  }
 }

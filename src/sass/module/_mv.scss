@@ -13,7 +13,7 @@
 
 .mv__side {
   position: absolute;
-  bottom: rem(20);
+  bottom: rem(24);
   writing-mode: vertical-rl;
   display: flex;
   align-items: center;
@@ -108,7 +108,7 @@
 
 .mv__title-wrap {
   position: absolute;
-  top: 20%;
+  top: 15.5%;
   left: 0;
   @include mq("md") {
     position: initial;
@@ -128,7 +128,7 @@
 }
 
 .mv__title-sub {
-  margin-top: rem(46);
+  margin-top: rem(48);
   font-size: rem(20);
   font-weight: $regular;
   line-height: 1;

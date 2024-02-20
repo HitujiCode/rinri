@@ -1,7 +1,7 @@
-   <svg class="icon-arrow-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="13" viewBox="0 0 25 13">
-     <defs>
-       <clipPath id="a">
-         <rect width="13" height="20" transform="translate(0 0.258)" fill="none" stroke="#c38b79" stroke-width="1" />
+<svg class="icon-arrow-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="13" viewBox="0 0 25 13">
+  <defs>
+    <clipPath id="a">
+      <rect width="13" height="20" transform="translate(0 0.258)" fill="none" stroke="#c38b79" stroke-width="1" />
        </clipPath>
      </defs>
      <g transform="translate(-638 -975.248)">

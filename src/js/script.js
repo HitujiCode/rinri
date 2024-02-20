@@ -163,3 +163,16 @@ jQuery(function ($) {
     $(".js-tab-content").eq(index).addClass("is-active");
   });
 });
+
+// schedule-date
+// document.addEventListener("DOMContentLoaded", function () {
+//   const cells = document.querySelectorAll(".js-schedule-date td");
+
+//   cells.forEach(function (cell) {
+//     switch (cell.textContent) {
+//       case "新潟万代":
+//         cell.classList.add("schedule-date__blue");
+//         break;
+//     }
+//   });
+// });

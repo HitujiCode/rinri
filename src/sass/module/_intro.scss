@@ -5,9 +5,6 @@
 }
 
 .intro__inner.inner {
-  max-width: 1440px;
-  padding-left: min((100 / 1440 * 100vw), 100px);
-  padding-right: min((78 / 1440 * 100vw), 78px);
   @include mq("md") {
     width: 100%;
   }
@@ -15,8 +12,11 @@
 
 .intro__container {
   display: flex;
-  gap: min((146 / 1262 * 100vw), rem(146));
+  gap: min((130 / 1232 * 100vw), rem(130));
   position: relative;
+  @include mq("md") {
+    flex-direction: column;
+  }
 }
 
 .intro__container::before {
@@ -24,7 +24,7 @@
   white-space: pre;
   position: absolute;
   top: rem(-140);
-  left: rem(-60);
+  left: rem(-54);
   text-transform: uppercase;
   font-size: rem(80);
   font-weight: $medium;
@@ -35,22 +35,11 @@
 }
 
 .intro__img {
-  position: relative;
   z-index: 1;
-  width: calc(598 / 1262 * 100%);
+  width: calc(598 / 1232 * 100%);
   // filter: opacity(0.9);
   // background-color: rgba($white, 0.5);
   // mix-blend-mode: multiply;
-}
-
-.intro__img::before {
-  // content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba($white, 0.1);
 }
 
 .intro__img img {
@@ -62,7 +51,7 @@
 
 .intro__body {
   flex: 1;
-  padding-top: rem(98);
+  padding-top: rem(96);
 }
 
 .intro__title {
@@ -72,7 +61,7 @@
 }
 
 .intro__text-wrap {
-  margin-top: rem(88);
+  margin-top: rem(78);
 }
 
 .intro__head {
@@ -82,7 +71,7 @@
 }
 
 .intro__text {
-  margin-top: rem(32);
+  margin-top: rem(16);
 }
 
 .intro__button {

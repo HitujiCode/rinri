@@ -18,10 +18,11 @@
 }
 
 .section-head__ja {
-  margin-top: rem(26);
+  margin-top: rem(32);
   font-size: rem(20);
   font-weight: $regular;
   line-height: 1;
+  transition: color 0.3s ease;
   @include mq("md") {
     margin-top: rem(2);
     font-size: 12px;
@@ -36,10 +37,24 @@
   font-size: rem(24);
 }
 
+.section-head--small .section-head__ja {
+  margin-top: rem(24);
+}
+
 .section-head--white {
   @extend .section-head;
 }
 
 .section-head--white .section-head__ja {
   color: $white;
+}
+
+.section-head--delta {
+  @extend .section-head;
+}
+
+.section-head--delta .section-head__ja {
+  margin-top: rem(20);
+  @include mq("md") {
+  }
 }

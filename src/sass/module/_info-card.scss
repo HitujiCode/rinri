@@ -4,7 +4,7 @@
   display: grid;
   grid-template-rows: subgrid;
   grid-row: span 3;
-  row-gap: rem(28);
+  row-gap: rem(20);
 }
 
 .info-card__link {
@@ -22,6 +22,7 @@
 }
 
 .info-card__title {
+  margin-top: rem(4);
   font-size: rem(16);
   font-weight: $regular;
   line-height: calc(30 / 16);
@@ -30,6 +31,7 @@
 .info-card__meta {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .info-card__date {
