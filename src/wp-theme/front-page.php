@@ -251,6 +251,83 @@
     </div>
   </section>
 
+  <section class="infomation layout-infomation">
+    <div class="infomation__inner inner">
+      <div class="infomation__container">
+        <div class="infomation__aside">
+          <div class="infomation__head">
+            <div class="section-head--small">
+              <p class="section-head__en">Infomation</p>
+              <h2 class="section-head__ja">活動報告</h2>
+            </div>
+          </div>
+          <ul class="infomation__tab-menu">
+            <li class="infomation__tab-menu-item label-category--white js-tab-menu is-active" data-number="tab01">カテゴリ1</li>
+            <li class="infomation__tab-menu-item label-category--white js-tab-menu" data-number="tab02">カテゴリ2</li>
+            <li class="infomation__tab-menu-item label-category--white js-tab-menu" data-number="tab03">カテゴリ3</li>
+            <li class="infomation__tab-menu-item label-category--white js-tab-menu" data-number="tab04">カテゴリ3</li>
+          </ul>
+          <div class="infomation__button">
+            <a href="#" class="button--small">Read more
+              <div class="button__icon">
+                <?php echo get_template_part("parts/icon-arrow-svg") ?>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="infomation__tab-content-wrap">
+          <ul id="tab01" class="infomation__tab-content info-cards js-tab-content">
+            <li class="info-card">
+              <div class="info-card__img">
+                <img src="wp-content/themes/rinri/assets/images/top/info1@2x.webp" alt="" width="" height="" loading="lazy">
+              </div>
+              <h3 class="info-card__title">ここに活動報告のタイトルが入ります。ダミーです。</h3>
+              <div class="info-card__meta">
+                <time class="info-card__date" datetime="2024-01-04">2024.01.04</time>
+                <span class="info-card__category label-category">カテゴリ</span>
+              </div>
+            </li>
+          </ul>
+          <ul id="tab02" class="infomation__tab-content info-cards js-tab-content">
+            <li class="info-card">
+              <div class="info-card__img">
+                <img src="wp-content/themes/rinri/assets/images/top/info1@2x.webp" alt="" width="" height="" loading="lazy">
+              </div>
+              <h3 class="info-card__title">ここに活動報告のタイトルが入ります。ダミーです。</h3>
+              <div class="info-card__meta">
+                <time class="info-card__date" datetime="2024-01-04">2024.01.04</time>
+                <span class="info-card__category label-category">カテゴリ</span>
+              </div>
+            </li>
+          </ul>
+          <ul id="tab01" class="infomation__tab-content info-cards js-tab-content">
+            <li class="info-card">
+              <div class="info-card__img">
+                <img src="wp-content/themes/rinri/assets/images/top/info1@2x.webp" alt="" width="" height="" loading="lazy">
+              </div>
+              <h3 class="info-card__title">ここに活動報告のタイトルが入ります。ダミーです。</h3>
+              <div class="info-card__meta">
+                <time class="info-card__date" datetime="2024-01-04">2024.01.04</time>
+                <span class="info-card__category label-category">カテゴリ</span>
+              </div>
+            </li>
+          </ul>
+          <ul id="tab01" class="infomation__tab-content info-cards js-tab-content">
+            <li class="info-card">
+              <div class="info-card__img">
+                <img src="wp-content/themes/rinri/assets/images/top/info1@2x.webp" alt="" width="" height="" loading="lazy">
+              </div>
+              <h3 class="info-card__title">ここに活動報告のタイトルが入ります。ダミーです。</h3>
+              <div class="info-card__meta">
+                <time class="info-card__date" datetime="2024-01-04">2024.01.04</time>
+                <span class="info-card__category label-category">カテゴリ</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
   <!-- 共通 -->
 
   <div class=" inner">
@@ -259,36 +336,8 @@
       <h2 class="section-head__ja">はじめての方へ</h2>
     </div>
 
-
     <!-- カード -->
-    <ul class="member-cards">
-      <li class="member-card">
-        <div class="member-card__img-wrap">
-          <div class="member-card__img">
-            <img src="wp-content/themes/rinri/assets/images/top/member1@2x.jpg" alt="">
-          </div>
-          <p class="member-card__company">株式会社◯◯◯◯◯</p>
-        </div>
-        <div class="member-card__body">
-          <p class="member-card__name">代表取締役　〇〇〇〇</p>
-          <p class="member-card__text text">ここに会社の紹介が入ります。この文章はダミーです。ここに会社の紹介が入ります。</p>
-        </div>
-      </li>
-    </ul>
 
-    <!-- カード -->
-    <ul class="info-cards">
-      <li class="info-card">
-        <div class="info-card__img">
-          <img src="wp-content/themes/rinri/assets/images/top/info1@2x.jpg" alt="" width="" height="" loading="lazy">
-        </div>
-        <h3 class="info-card__title">ここに活動報告のタイトルが入ります。ダミーです。</h3>
-        <div class="info-card__meta">
-          <time class="info-card__date" datetime="2024-01-04">2024.01.04</time>
-          <span class="info-card__category">カテゴリ</span>
-        </div>
-      </li>
-    </ul>
 
     <!-- カード -->
     <ul class="seminar-cards">

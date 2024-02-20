@@ -1,0 +1,48 @@
+@use "global" as *;
+
+.infomation {
+}
+
+.infomation__inner.inner {
+}
+
+.infomation__container {
+  display: flex;
+  gap: rem(52);
+}
+
+.infomation__aside {
+  width: calc(265 / 1232 * 100%);
+  border-right: 1px solid $lightgray;
+}
+
+.infomation__head {
+}
+
+.infomation__tab-menu {
+  margin-top: rem(56);
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: rem(12);
+  row-gap: rem(13);
+}
+
+.infomation__tab-menu-item {
+}
+
+.infomation__tab-menu-item.is-active {
+  background-color: $black;
+  color: $white;
+  border: none;
+}
+
+.infomation__button {
+  margin-top: rem(60);
+}
+
+.infomation__tab-content {
+  flex: 1;
+}
+
+.info-cards {
+}

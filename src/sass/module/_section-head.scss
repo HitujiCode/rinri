@@ -27,3 +27,11 @@
     font-size: 12px;
   }
 }
+
+.section-head--small {
+  @extend .section-head;
+}
+
+.section-head--small .section-head__en {
+  font-size: rem(24);
+}

@@ -23,19 +23,12 @@
 .info-card__meta {
   display: flex;
   justify-content: space-between;
-  font-size: rem(14);
-  font-weight: $regular;
-  line-height: 1;
-  letter-spacing: 0.05em;
 }
 
 .info-card__date {
   font-family: $en-font;
-}
-
-.info-card__category {
-  font-family: $gothic-font;
-  background-color: $black;
-  color: $white;
-  padding: rem(5) rem(10);
+  font-size: rem(14);
+  font-weight: $regular;
+  line-height: 1;
+  letter-spacing: 0.05em;
 }
