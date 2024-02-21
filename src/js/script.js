@@ -84,20 +84,20 @@ jQuery(function ($) {
 
   // memberSwiper
   const memberSwiper = new Swiper(".js-member-swiper", {
-    // loop: true,
     slidesPerView: "auto",
-    spaceBetween: 40,
-    slidesOffsetAfter: 48,
-    // centeredSlides: false, // アクティブなスライドを中央ではなく左端に配置
-    // centerInsufficientSlides: false,
+    spaceBetween: 30,
 
-    // Navigation arrows
+    breakpoints: {
+      768: {
+        spaceBetween: 40,
+      },
+    },
+
     navigation: {
       nextEl: ".js-member-swiper-ui .swiper-button-next",
       prevEl: ".js-member-swiper-ui .swiper-button-prev",
     },
 
-    // And if we need scrollbar
     scrollbar: {
       el: ".js-member-swiper-ui .swiper-scrollbar",
       hide: false,
@@ -106,17 +106,20 @@ jQuery(function ($) {
 
   // seminarSwiper
   const seminarSwiper = new Swiper(".js-seminar-swiper", {
-    // loop: true,
     slidesPerView: "auto",
-    spaceBetween: 40,
+    spaceBetween: 30,
 
-    // Navigation arrows
+    breakpoints: {
+      768: {
+        spaceBetween: 40,
+      },
+    },
+
     navigation: {
       nextEl: ".js-seminar-swiper-ui .swiper-button-next",
       prevEl: ".js-seminar-swiper-ui .swiper-button-prev",
     },
 
-    // And if we need scrollbar
     scrollbar: {
       el: ".js-seminar-swiper-ui .swiper-scrollbar",
       hide: false,
