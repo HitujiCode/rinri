@@ -3,4 +3,7 @@
 .layout-intro {
   padding: rem(195) 0 rem(160);
   background-image: linear-gradient($ivory 64.53%, $white);
+  @include mq("md") {
+    padding: rem(92) 0 rem(80);
+  }
 }

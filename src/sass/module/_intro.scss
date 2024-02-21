@@ -2,6 +2,9 @@
 
 .intro {
   position: relative;
+  @include mq("md") {
+    overflow-x: hidden;
+  }
 }
 
 .intro::before {
@@ -17,6 +20,11 @@
   color: $white;
   line-height: calc(100 / 80);
   letter-spacing: 0.1em;
+  @include mq("md") {
+    top: rem(24);
+    left: calc(4 / 375 * 100vw);
+    font-size: calc(36 / 375 * 100vw);
+  }
 }
 
 .intro__inner.inner {
@@ -28,18 +36,19 @@
 .intro__container {
   display: flex;
   gap: min((130 / 1232 * 100vw), rem(130));
-  // position: relative;
   @include mq("md") {
     flex-direction: column;
+    gap: 0;
   }
 }
 
 .intro__img {
   z-index: 1;
   width: calc(598 / 1232 * 100%);
-  // filter: opacity(0.9);
-  // background-color: rgba($white, 0.5);
-  // mix-blend-mode: multiply;
+  @include mq("md") {
+    width: 100%;
+    margin-right: calc(50% - 50vw);
+  }
 }
 
 .intro__img img {
@@ -47,33 +56,51 @@
   width: 100%;
   height: auto;
   object-fit: cover;
+  @include mq("md") {
+    aspect-ratio: 598/550;
+    object-position: top;
+  }
 }
 
 .intro__body {
   flex: 1;
   padding-top: rem(96);
+  @include mq("md") {
+    padding-top: rem(40);
+  }
 }
 
 .intro__title {
   font-size: rem(48);
   font-weight: $regular;
   line-height: calc(68 / 48);
+  @include mq("md") {
+    font-size: rem(30);
+  }
 }
 
 .intro__text-wrap {
   margin-top: rem(78);
+  @include mq("md") {
+    margin-top: rem(32);
+  }
 }
 
 .intro__head {
   font-size: rem(20);
   font-weight: $semi-bold;
   line-height: 2;
+  @include mq("md") {
+    font-size: rem(16);
+  }
 }
 
 .intro__text {
-  margin-top: rem(16);
+  margin-top: rem(20);
 }
 
 .intro__button {
-  margin-top: rem(48);
+  margin-top: rem(50);
+  display: flex;
+  justify-content: center;
 }

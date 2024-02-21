@@ -6,7 +6,7 @@
   grid-template-columns: repeat(3, 1fr);
   counter-reset: number;
   @include mq(md) {
-    row-gap: rem(50);
+    row-gap: rem(30);
     column-gap: rem(24);
     grid-template-columns: 1fr;
   }
@@ -35,6 +35,9 @@
   flex-direction: column;
   flex-grow: 1;
   padding: rem(48) rem(36);
+  @include mq("md") {
+    padding: rem(32) rem(20);
+  }
 }
 
 .activity-card__head {
@@ -48,9 +51,6 @@
   line-height: 1;
   letter-spacing: 0.05em;
   color: rgba($white, 0.5);
-  @include mq(md) {
-    font-size: rem(20);
-  }
 }
 
 .activity-card__number::after {
@@ -66,8 +66,7 @@
   color: $white;
   line-height: 1;
   @include mq(md) {
-    margin-top: rem(20);
-    font-size: rem(25);
+    font-size: rem(22);
   }
 }
 
@@ -77,8 +76,8 @@
   color: $white;
   text-align: justify;
   @include mq(md) {
-    margin-top: rem(25);
-    font-size: rem(16);
+    margin-top: rem(24);
+    font-feature-settings: "palt";
   }
 }
 
@@ -86,6 +85,9 @@
   margin-top: rem(48);
   display: flex;
   justify-content: center;
+  @include mq("md") {
+    margin-top: rem(32);
+  }
 }
 
 .activity-card--blue {

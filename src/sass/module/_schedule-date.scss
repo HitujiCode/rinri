@@ -15,7 +15,8 @@
   line-height: 1;
   padding: rem(15) 0;
   @include mq("md") {
-    font-size: rem(14);
+    font-size: rem(12);
+    padding: rem(12) 0;
   }
 }
 
@@ -51,6 +52,9 @@
   transform: translateY(-50%);
   width: rem(5);
   height: calc(100% - 2px);
+  @include mq("md") {
+    width: rem(3);
+  }
 }
 
 .schedule-date__blue::before {

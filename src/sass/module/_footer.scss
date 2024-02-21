@@ -5,7 +5,7 @@
   background-color: $base;
   color: $white;
   @include mq(md) {
-    padding: rem(80) 0;
+    padding: rem(60) 0 rem(20);
   }
 }
 
@@ -42,7 +42,7 @@
   margin-left: auto;
   width: rem(669);
   @include mq("md") {
-    margin-top: rem(48);
+    margin-top: rem(50);
     width: 100%;
   }
 }
@@ -87,15 +87,20 @@
 
 .footer__nav {
   padding-top: rem(12);
+  @include mq("md") {
+    padding-top: initial;
+  }
 }
 
 .footer__nav-lists {
   display: flex;
-  gap: rem(60);
-  gap: calc(60 / 669 * 100%);
+  gap: calc(60 / 675 * 100%);
   @include mq("md") {
-    flex-direction: column;
-    gap: rem(30);
+    // flex-direction: column;
+    flex-wrap: wrap;
+    // column-gap: rem(60);
+    justify-content: space-between;
+    row-gap: rem(24);
   }
 }
 
@@ -103,10 +108,17 @@
   font-size: rem(20);
   font-weight: $regular;
   line-height: 1;
+  @include mq("md") {
+    width: rem(220);
+    font-size: rem(16);
+  }
 }
 
 .footer__nav-items {
   margin-top: rem(16);
+  @include mq("md") {
+    margin-top: rem(12);
+  }
 }
 
 .footer__nav-item {
@@ -116,6 +128,9 @@
   line-height: 2;
   letter-spacing: 0.05em;
   list-style-position: inside;
+  @include mq("md") {
+    font-size: rem(14);
+  }
 }
 
 .footer__nav-item::marker {
@@ -152,7 +167,7 @@
   display: flex;
   gap: rem(40);
   @include mq("md") {
-    margin-top: rem(48);
+    margin-top: rem(50);
     flex-wrap: wrap;
     gap: rem(20);
     width: 100%;
@@ -160,10 +175,12 @@
 }
 
 .footer__button {
-  width: calc(278 / 669 * 100%);
+  max-width: rem(278);
+  width: 100%;
   @include mq("md") {
+    // margin-inline: auto;
     // max-width: rem(335);
-    width: 100%;
+    // width: 100%;
   }
 }
 
@@ -172,8 +189,9 @@
   display: flex;
   gap: rem(52);
   @include mq("md") {
-    justify-content: center;
-    gap: 2em;
+    margin-top: rem(32);
+    // justify-content: center;
+    gap: rem(32);
   }
 }
 
@@ -199,5 +217,15 @@
 
   .footer__link:hover::after {
     width: 100%;
+  }
+}
+
+.footer__copyright {
+  display: none;
+  @include mq("md") {
+    display: block;
+    margin-top: rem(40);
+    color: $white;
+    text-align: center;
   }
 }

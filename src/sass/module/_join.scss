@@ -16,6 +16,11 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+  @include mq("md") {
+    left: rem(10);
+    width: rem(188);
+    height: rem(108);
+  }
 }
 
 .join::after {
@@ -29,6 +34,14 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+  @include mq("md") {
+    right: rem(10);
+    width: rem(145);
+    height: rem(101);
+  }
+  @include mq("sm") {
+    content: none;
+  }
 }
 
 .join__inner.inner {
@@ -42,14 +55,24 @@
   font-size: rem(32);
   font-weight: $regular;
   line-height: calc(40 / 32);
+  @include mq("md") {
+    font-size: rem(24);
+    line-height: 1.5;
+  }
 }
 
 .join__text {
   margin-top: rem(56);
+  @include mq("md") {
+    margin-top: rem(40);
+  }
 }
 
 .join__button {
   margin-top: rem(60);
   display: flex;
   justify-content: center;
+  @include mq("md") {
+    margin-top: rem(50);
+  }
 }

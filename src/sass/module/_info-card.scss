@@ -26,6 +26,9 @@
   font-size: rem(16);
   font-weight: $regular;
   line-height: calc(30 / 16);
+  @include mq("md") {
+    margin-top: initial;
+  }
 }
 
 .info-card__meta {

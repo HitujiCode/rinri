@@ -12,14 +12,21 @@
 .about-item__link {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: rem(56) rem(10) rem(56) rem(20);
   position: relative;
+  @include mq("md") {
+    padding: rem(32) rem(10);
+  }
 }
 
 .about-item__title {
   font-size: rem(28);
   font-weight: $regular;
   line-height: 1;
+  @include mq("md") {
+    font-size: rem(18);
+  }
 }
 
 .about-item__img {
@@ -33,6 +40,9 @@
   transition:
     visibility 0.3s ease,
     opacity 0.3s ease;
+  @include mq("md") {
+    display: none;
+  }
 }
 
 .about-item__img img {
@@ -46,6 +56,10 @@
   width: rem(43);
   height: rem(23);
   transition: transform 0.3s ease;
+  @include mq("md") {
+    width: rem(25);
+    height: auto;
+  }
 }
 
 .about-item__icon svg {

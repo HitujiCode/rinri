@@ -34,9 +34,9 @@
       <h1 class="header__logo">
         <a href="#" class="logo">
           <div class="logo__icon">
-            <img src="wp-content/themes/rinri/assets/images/common/logo.svg" alt="Logo">
+            <img src="wp-content/themes/rinri/assets/images/common/logo.svg" alt="Logo" width="40" height="40">
           </div>
-          <div class="logo__title">新潟県倫理法人会</div>
+          <p class="logo__title">新潟県倫理法人会</p>
         </a>
       </h1>
       <nav class="header__nav">

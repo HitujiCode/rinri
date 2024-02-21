@@ -19,6 +19,9 @@
 .seminar-card__title-wrap {
   padding: rem(32) rem(48);
   flex: 1;
+  @include mq("md") {
+    padding: rem(20) rem(20);
+  }
 }
 
 .seminar-card__title {
@@ -32,6 +35,10 @@
   line-height: 1;
   padding-bottom: rem(5);
   border-bottom: 1px solid $black;
+  @include mq("md") {
+    font-size: rem(12);
+    padding-bottom: rem(2);
+  }
 }
 
 .seminar-card__title-text {
@@ -40,6 +47,10 @@
   font-size: rem(18);
   font-weight: $regular;
   line-height: 1.3;
+  @include mq("md") {
+    margin-top: rem(16);
+    font-size: rem(16);
+  }
 }
 
 .seminar-card__img {
@@ -58,6 +69,9 @@
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+  @include mq("md") {
+    padding: rem(20);
+  }
 }
 
 .seminar-card__info-wrap {
@@ -68,6 +82,9 @@
   color: $black;
   line-height: calc(30 / 16);
   letter-spacing: 0.05em;
+  @include mq("md") {
+    font-size: rem(14);
+  }
 }
 
 .seminar-card__info-wrap:not(:first-child) {
@@ -89,6 +106,9 @@
 
 .seminar-card__info-description {
   width: calc(460 / 525 * 100%);
+  @include mq("md") {
+    width: 80%;
+  }
 }
 
 .seminar-card__info-description:last-child {

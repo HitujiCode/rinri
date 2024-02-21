@@ -11,12 +11,20 @@
   gap: rem(52);
   @include mq("md") {
     flex-direction: column;
+    gap: rem(40);
   }
 }
 
 .infomation__aside {
   width: calc(265 / 1232 * 100%);
   border-right: 1px solid $lightgray;
+  // padding-right: rem(52);
+  padding-right: calc(52 / 1232 * 100%);
+  @include mq("md") {
+    // width: 100%;
+    // border-right: initial;
+    display: contents;
+  }
 }
 
 .infomation__head {
@@ -24,10 +32,15 @@
 
 .infomation__tab-menu {
   margin-top: rem(56);
-  display: grid;
-  grid-template-columns: repeat(2, minmax(auto, rem(75)));
+  display: flex;
+  flex-wrap: wrap;
   column-gap: rem(12);
   row-gap: rem(13);
+  @include mq("md") {
+    margin-top: initial;
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .infomation__tab-menu-item {
@@ -42,6 +55,12 @@
 
 .infomation__button {
   margin-top: rem(60);
+  @include mq("md") {
+    margin-top: rem(10);
+    order: 1;
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .infomation__tab-content-wrap {

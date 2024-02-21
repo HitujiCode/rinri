@@ -8,18 +8,14 @@
 
 .guide__items {
   display: flex;
-  border-top: 1px solid $lightgray;
   @include mq("md") {
     flex-direction: column;
   }
 }
 
 .guide__item {
+  border-top: 1px solid $lightgray;
   flex: 1;
-  padding-top: rem(85);
-  padding-bottom: rem(94);
-  padding-left: calc(70 / 1440 * 100%);
-  padding-right: calc(75 / 1440 * 100%);
   background-image: url(../images/top/hover-bg@2x.webp);
   background-repeat: no-repeat;
   background-position: center;
@@ -28,8 +24,6 @@
 }
 
 .guide__item:nth-child(even) {
-  padding-left: calc(75 / 1440 * 100%);
-  padding-right: calc(70 / 1440 * 100%);
   border-left: 1px solid $lightgray;
 }
 
@@ -49,12 +43,28 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-top: rem(85);
+  padding-bottom: rem(94);
+  padding-left: calc(70 / 1440 * 100%);
+  padding-right: calc(75 / 1440 * 100%);
+  @include mq("md") {
+    padding-top: rem(32);
+    padding-bottom: rem(32);
+  }
+}
+
+.guide__item-link:nth-child(even) {
+  padding-left: calc(75 / 1440 * 100%);
+  padding-right: calc(70 / 1440 * 100%);
 }
 
 .guide__item-icon {
   width: rem(43);
-  height: rem(23);
+  height: auto;
   transition: transform 0.3s ease;
+  @include mq("md") {
+    width: rem(30);
+  }
 }
 
 .guide__item-icon svg *[stroke] {

@@ -1,7 +1,7 @@
 @use "global" as *;
 
 .contact {
-  background-image: url("./../images/top/contact@2x.webp");
+  background-image: url("../images/top/contact@2x.webp");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -34,10 +34,18 @@
 
 .contact__text {
   margin-top: rem(56);
+  @include mq("md") {
+    margin-top: rem(40);
+    word-break: keep-all;
+    overflow-wrap: anywhere;
+  }
 }
 
 .contact__button {
   margin-top: rem(46);
   display: flex;
   justify-content: center;
+  @include mq("md") {
+    margin-top: rem(32);
+  }
 }

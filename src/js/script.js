@@ -40,28 +40,37 @@ jQuery(function ($) {
   // ページトップボタン
   const pageTop = $(".js-pagetop");
   pageTop.hide();
+
   $(window).scroll(function () {
     var scrollPosition = $(this).scrollTop();
     var windowHeight = $(this).height();
     var bodyHeight = $(document).height();
-    var footerHeight = $(".p-footer").outerHeight();
+    var footerHeight = $(".footer").outerHeight();
+
+    // スクロール位置が70を超えた場合にページトップへ戻るボタンを表示
     if (scrollPosition > 70) {
       pageTop.fadeIn();
     } else {
       pageTop.fadeOut();
     }
+
+    // フッターに入ったらsrc内のprevをnextに変更、それ以外の場合はnextをprevに変更
+    const pageTopImg = $(".js-pagetop-img");
+    let currentSrc = pageTopImg.attr("src");
     if (bodyHeight - scrollPosition <= windowHeight + footerHeight) {
-      pageTop.css({
-        position: "absolute",
-        bottom: footerHeight + 6 + "px",
-      });
+      // フッターに到達したらprevをnextに変更
+      let newSrc = currentSrc.replace("prev", "next");
+      pageTopImg.attr("src", newSrc);
+      pageTop.addClass("is-reverse");
     } else {
-      pageTop.css({
-        position: "fixed",
-        bottom: "20px",
-      });
+      // フッターから離れたらnextをprevに戻す
+      let newSrc = currentSrc.replace("next", "prev");
+      pageTopImg.attr("src", newSrc);
+      pageTop.removeClass("is-reverse");
     }
   });
+
+  // ページトップへ戻るボタンのクリックイベント
   pageTop.click(function () {
     $("body,html").animate(
       {
@@ -72,45 +81,6 @@ jQuery(function ($) {
     );
     return false;
   });
-
-  // アンカーリンク
-  // $(document).ready(function () {
-  //   // 別ページからの遷移を考慮して、ページ読み込み時とハッシュ変更時に処理を実行
-  //   function adjustAnchor() {
-  //     var headerHeight = $(".js-header").outerHeight(); // ヘッダーの動的な高さを取得
-  //     var hash = window.location.hash; // 現在のハッシュを取得
-
-  //     if (hash) {
-  //       var target = $(hash);
-  //       if (target.length) {
-  //         var position = target.offset().top - headerHeight; // ヘッダーの高さを考慮した位置を計算
-  //         $("html, body").stop().animate(
-  //           {
-  //             scrollTop: position,
-  //           },
-  //           600,
-  //           "swing"
-  //         );
-  //       }
-  //     }
-  //   }
-
-  //   // ページ読み込み時とハッシュが変更された時にアンカー位置調整を実行
-  //   $(window).on("load hashchange", function () {
-  //     adjustAnchor();
-  //   });
-
-  //   // ページ内リンクに対するクリックイベント
-  //   $('a[href^="#"]').click(function (e) {
-  //     var href = $(this).attr("href");
-  //     // 別ページへのアンカーの場合はデフォルトの動作を実行
-  //     if (href.startsWith("#") && href.length > 1) {
-  //       // ハッシュ変更をトリガーとして位置調整を実行する
-  //       window.location.hash = href;
-  //       return false; // デフォルトのアンカー動作をキャンセル
-  //     }
-  //   });
-  // });
 
   // memberSwiper
   const memberSwiper = new Swiper(".js-member-swiper", {
@@ -129,7 +99,6 @@ jQuery(function ($) {
     scrollbar: {
       el: ".js-member-swiper-ui .swiper-scrollbar",
       hide: false,
-      dragSize: 318,
     },
   });
 
@@ -150,7 +119,6 @@ jQuery(function ($) {
     scrollbar: {
       el: ".js-seminar-swiper-ui .swiper-scrollbar",
       hide: false,
-      dragSize: 318,
     },
   });
 
@@ -164,7 +132,7 @@ jQuery(function ($) {
   });
 });
 
-// schedule-date
+// テキストに応じてテーブルの色を変える場合
 // document.addEventListener("DOMContentLoaded", function () {
 //   const cells = document.querySelectorAll(".js-schedule-date td");
 
@@ -176,3 +144,25 @@ jQuery(function ($) {
 //     }
 //   });
 // });
+
+// 画像にSPのとき_spをつけて出し分けする
+const changeImages = $(".change-image");
+const changeImage = function () {
+  changeImages.each(function (index, el) {
+    let src = $(el).attr("src");
+
+    src = src.replace(/_sp(@2x)/, "$1");
+
+    if ($(window).width() <= 767) {
+      // 767px以下の場合、@2xの前に_spを追加
+      src = src.replace(/(@2x)/, "_sp$1");
+    }
+
+    $(el).attr("src", src);
+  });
+};
+
+$(window).on({
+  load: changeImage,
+  resize: changeImage,
+});

@@ -3,4 +3,7 @@
 .layout-join {
   padding: rem(116) 0 rem(120);
   background-color: $bg-light;
+  @include mq("md") {
+    padding: rem(60) 0 rem(160);
+  }
 }

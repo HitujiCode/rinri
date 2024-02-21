@@ -13,7 +13,7 @@
   justify-content: space-between;
   background-color: $base;
   color: $white;
-  // transition: all 0.3s ease;
+  transition: color 0.3s ease;
 }
 
 .button__icon {
@@ -42,6 +42,9 @@
 .button--small {
   @extend .button;
   max-width: rem(212);
+  @include mq("md") {
+    max-width: rem(278);
+  }
 }
 
 .button--blue {
@@ -117,6 +120,27 @@
 }
 
 @media (hover: hover) {
+  .button:hover {
+    opacity: 1;
+    color: rgba($white, 0.6);
+  }
+
+  .button--red:hover {
+    color: rgba($red, 0.6);
+  }
+
+  .button--blue:hover {
+    color: rgba($blue, 0.6);
+  }
+
+  .button--green:hover {
+    color: rgba($green, 0.6);
+  }
+
+  .button--white:hover {
+    color: rgba($base, 0.6);
+  }
+
   .button:hover .button__icon {
     transform: translateX(rem(10));
   }
