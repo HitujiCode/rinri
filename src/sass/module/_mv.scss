@@ -92,7 +92,7 @@
 }
 
 .mv__title-main {
-  font-size: rem(80);
+  font-size: calc(80 / 1440 * 100vw);
   font-weight: $medium;
   font-family: $en-font;
   line-height: calc(100 / 80);
@@ -105,7 +105,7 @@
 
 .mv__title-sub {
   margin-top: rem(48);
-  font-size: rem(20);
+  font-size: calc(20 / 1440 * 100vw);
   font-weight: $regular;
   line-height: 1;
   @include mq("md") {

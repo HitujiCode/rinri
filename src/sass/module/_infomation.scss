@@ -22,7 +22,7 @@
   margin-top: rem(56);
   display: flex;
   flex-wrap: wrap;
-  column-gap: rem(12);
+  column-gap: rem(10);
   row-gap: rem(13);
   @include mq("md") {
     margin-top: initial;

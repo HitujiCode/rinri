@@ -87,7 +87,9 @@ jQuery(function ($) {
     // loop: true,
     slidesPerView: "auto",
     spaceBetween: 40,
-    // centerdSlides: false,
+    slidesOffsetAfter: 48,
+    // centeredSlides: false, // アクティブなスライドを中央ではなく左端に配置
+    // centerInsufficientSlides: false,
 
     // Navigation arrows
     navigation: {
@@ -107,7 +109,6 @@ jQuery(function ($) {
     // loop: true,
     slidesPerView: "auto",
     spaceBetween: 40,
-    // centerdSlides: false,
 
     // Navigation arrows
     navigation: {

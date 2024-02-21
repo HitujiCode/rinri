@@ -4,7 +4,7 @@
   font-family: $gothic-font;
   background-color: $black;
   color: $white;
-  padding: rem(4) rem(7);
+  padding: rem(3) rem(7) rem(5);
   width: fit-content;
   font-size: rem(14);
   font-weight: $regular;
@@ -17,6 +17,6 @@
   @extend .label-category;
   background-color: $white;
   color: $black;
-  padding: rem(4) rem(7);
+  padding: rem(3) rem(7) rem(5);
   border: 1px solid $lightgray;
 }

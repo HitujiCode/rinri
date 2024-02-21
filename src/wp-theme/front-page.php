@@ -11,7 +11,7 @@
       </div>
       <div class="mv__container">
         <div class="mv__img">
-          <img src="wp-content/themes/rinri/assets/images/top/mv@2x.webp" alt="" width="916" height="717" class="change-image" />
+          <img src="<?php echo esc_url(get_theme_file_uri('assets/images/top/mv@2x.jpg')); ?>" alt="" width="916" height="717" class="change-image" />
         </div>
         <div class="mv__title-wrap">
           <h2 class="mv__title-main">rinri<br>
@@ -56,7 +56,7 @@
     <div class="intro__inner inner">
       <div class="intro__container">
         <div class="intro__img">
-          <img src="wp-content/themes/rinri/assets/images/top/intro@2x.webp" alt="" width="598" height="717" loading="lazy" />
+          <img src="<?php echo esc_url(get_theme_file_uri('assets/images/top/intro@2x.jpg')); ?>" alt="" width="598" height="717" loading="lazy" />
         </div>
         <div class="intro__body">
           <div class="intro__title">倫理法人会って<br>
@@ -97,7 +97,7 @@
           <ol class="activity-cards">
             <li class="activity-card">
               <div class="activity-card__img">
-                <img src="wp-content/themes/rinri/assets/images/top/activity1@2x.webp" alt="" width="384" height="270" loading="lazy">
+                <img src="<?php echo esc_url(get_theme_file_uri('assets/images/top/activity1@2x.jpg')); ?>" alt="" width="384" height="270" loading="lazy">
               </div>
               <div class="activity-card__body">
                 <h3 class="activity-card__head">
@@ -115,7 +115,7 @@
             </li>
             <li class="activity-card--blue">
               <div class="activity-card__img">
-                <img src="wp-content/themes/rinri/assets/images/top/activity2@2x.webp" alt="" width="384" height="270" loading="lazy">
+                <img src="<?php echo esc_url(get_theme_file_uri('assets/images/top/activity2@2x.jpg')); ?>" alt="" width="384" height="270" loading="lazy">
               </div>
               <div class="activity-card__body">
                 <h3 class="activity-card__head">
@@ -133,7 +133,7 @@
             </li>
             <li class="activity-card--green">
               <div class="activity-card__img">
-                <img src="wp-content/themes/rinri/assets/images/top/activity3@2x.webp" alt="" width="384" height="270" loading="lazy">
+                <img src="<?php echo esc_url(get_theme_file_uri('assets/images/top/activity3@2x.jpg')); ?>" alt="" width="384" height="270" loading="lazy">
               </div>
               <div class="activity-card__body">
                 <h3 class="activity-card__head">
@@ -175,7 +175,7 @@
               <li class="member-card swiper-slide">
                 <div class="member-card__img-wrap">
                   <div class="member-card__img">
-                    <img src="wp-content/themes/rinri/assets/images/top/member1@2x.webp" alt="" width="278" height="196" loading="lazy">
+                    <img src="<?php echo esc_url(get_theme_file_uri('assets/images/top/member1@2x.jpg')); ?>" alt="" width="278" height="196" loading="lazy">
                   </div>
                   <p class="member-card__company">株式会社◯◯◯◯◯</p>
                 </div>
@@ -187,7 +187,7 @@
               <li class="member-card swiper-slide">
                 <div class="member-card__img-wrap">
                   <div class="member-card__img">
-                    <img src="wp-content/themes/rinri/assets/images/top/member2@2x.webp" alt="" width="278" height="196" loading="lazy">
+                    <img src="<?php echo esc_url(get_theme_file_uri('assets/images/top/member2@2x.jpg')); ?>" alt="" width="278" height="196" loading="lazy">
                   </div>
                   <p class="member-card__company">株式会社◯◯◯◯◯</p>
                 </div>
@@ -199,7 +199,7 @@
               <li class="member-card swiper-slide">
                 <div class="member-card__img-wrap">
                   <div class="member-card__img">
-                    <img src="wp-content/themes/rinri/assets/images/top/member3@2x.webp" alt="" width="278" height="196" loading="lazy">
+                    <img src="<?php echo esc_url(get_theme_file_uri('assets/images/top/member3@2x.jpg')); ?>" alt="" width="278" height="196" loading="lazy">
                   </div>
                   <p class="member-card__company">株式会社◯◯◯◯◯</p>
                 </div>
@@ -211,7 +211,7 @@
               <li class="member-card swiper-slide">
                 <div class="member-card__img-wrap">
                   <div class="member-card__img">
-                    <img src="wp-content/themes/rinri/assets/images/top/member4@2x.webp" alt="" width="278" height="196" loading="lazy">
+                    <img src="<?php echo esc_url(get_theme_file_uri('assets/images/top/member4@2x.jpg')); ?>" alt="" width="278" height="196" loading="lazy">
                   </div>
                   <p class="member-card__company">株式会社◯◯◯◯◯</p>
                 </div>
@@ -223,7 +223,7 @@
               <li class="member-card swiper-slide">
                 <div class="member-card__img-wrap">
                   <div class="member-card__img">
-                    <img src="wp-content/themes/rinri/assets/images/top/member1@2x.webp" alt="" width="278" height="196" loading="lazy">
+                    <img src="<?php echo esc_url(get_theme_file_uri('assets/images/top/member1@2x.jpg')); ?>" alt="" width="278" height="196" loading="lazy">
                   </div>
                   <p class="member-card__company">株式会社◯◯◯◯◯</p>
                 </div>
@@ -235,8 +235,8 @@
             </ul>
           </div>
           <div class="member__swiper-ui js-member-swiper-ui">
-            <div class="member__swiper-ui-prev swiper-button-prev"><img src="wp-content/themes/rinri/assets/images/common/icon-prev.svg" alt="前へ" width="40" height="40" loading="lazy" /></div>
-            <div class="member__swiper-ui-next swiper-button-next"><img src="wp-content/themes/rinri/assets/images/common/icon-next.svg" alt="次へ" width="40" height="40" loading="lazy" /></div>
+            <div class="member__swiper-ui-prev swiper-button-prev"><img src="<?php echo esc_url(get_theme_file_uri('assets/images/common/icon-prev.svg')); ?>" alt="前へ" width="40" height="40" loading="lazy" /></div>
+            <div class="member__swiper-ui-next swiper-button-next"><img src="<?php echo esc_url(get_theme_file_uri('assets/images/common/icon-next.svg')); ?>" alt="次へ" width="40" height="40" loading="lazy" /></div>
             <div class="member__swiper-ui-scrollbar swiper-scrollbar"></div>
           </div>
         </div>
@@ -280,7 +280,7 @@
             <li class="info-card">
               <a class="info-card__link" href="#">
                 <div class="info-card__img">
-                  <img src="wp-content/themes/rinri/assets/images/top/info1@2x.webp" alt="" width="278" height="196" loading="lazy">
+                  <img src="<?php echo esc_url(get_theme_file_uri('assets/images/top/info1@2x.jpg')); ?>" alt="" width="278" height="196" loading="lazy">
                 </div>
                 <h3 class="info-card__title">ここに活動報告のタイトルが入ります。ダミーです。</h3>
                 <div class="info-card__meta">
@@ -292,7 +292,7 @@
             <li class="info-card">
               <a class="info-card__link" href="#">
                 <div class="info-card__img">
-                  <img src="wp-content/themes/rinri/assets/images/top/info2@2x.webp" alt="" width="278" height="196" loading="lazy">
+                  <img src="<?php echo esc_url(get_theme_file_uri('assets/images/top/info2@2x.jpg')); ?>" alt="" width="278" height="196" loading="lazy">
                 </div>
                 <h3 class="info-card__title">ここに活動報告のタイトルが入ります。ダミーです。</h3>
                 <div class="info-card__meta">
@@ -304,7 +304,7 @@
             <li class="info-card">
               <a class="info-card__link" href="#">
                 <div class="info-card__img">
-                  <img src="wp-content/themes/rinri/assets/images/top/about1@2x.webp" alt="" width="278" height="196" loading="lazy">
+                  <img src="<?php echo esc_url(get_theme_file_uri('assets/images/top/about1@2x.jpg')); ?>" alt="" width="278" height="196" loading="lazy">
                 </div>
                 <h3 class="info-card__title">ここに活動報告のタイトルが入ります。ダミーです。</h3>
                 <div class="info-card__meta">
@@ -318,7 +318,7 @@
             <li class="info-card">
               <a class="info-card__link" href="#">
                 <div class="info-card__img">
-                  <img src="wp-content/themes/rinri/assets/images/top/info2@2x.webp" alt="" width="278" height="196" loading="lazy">
+                  <img src="<?php echo esc_url(get_theme_file_uri('assets/images/top/info2@2x.jpg')); ?>" alt="" width="278" height="196" loading="lazy">
                 </div>
                 <h3 class="info-card__title">ここに活動報告のタイトルが入ります。ダミーです。</h3>
                 <div class="info-card__meta">
@@ -332,7 +332,7 @@
             <li class="info-card">
               <a class="info-card__link" href="#">
                 <div class="info-card__img">
-                  <img src="wp-content/themes/rinri/assets/images/top/about1@2x.webp" alt="" width="278" height="196" loading="lazy">
+                  <img src="<?php echo esc_url(get_theme_file_uri('assets/images/top/about1@2x.jpg')); ?>" alt="" width="278" height="196" loading="lazy">
                 </div>
                 <h3 class="info-card__title">ここに活動報告のタイトルが入ります。ダミーです。</h3>
                 <div class="info-card__meta">
@@ -346,7 +346,7 @@
             <li class="info-card">
               <a class="info-card__link" href="#">
                 <div class="info-card__img">
-                  <img src="wp-content/themes/rinri/assets/images/top/mv@2x.webp" alt="" width="278" height="196" loading="lazy">
+                  <img src="<?php echo esc_url(get_theme_file_uri('assets/images/top/mv@2x.jpg')); ?>" alt="" width="278" height="196" loading="lazy">
                 </div>
                 <h3 class="info-card__title">ここに活動報告のタイトルが入ります。ダミーです。</h3>
                 <div class="info-card__meta">
@@ -382,7 +382,7 @@
                       </h3>
                     </div>
                     <div class="seminar-card__img">
-                      <img src="wp-content/themes/rinri/assets/images/top/seminar1@2x.webp" alt="" width="278" height="196" loading="lazy">
+                      <img src="<?php echo esc_url(get_theme_file_uri('assets/images/top/seminar1@2x.jpg')); ?>" alt="" width="278" height="196" loading="lazy">
                     </div>
                   </div>
                   <dl class="seminar-card__info">
@@ -410,7 +410,7 @@
                       </h3>
                     </div>
                     <div class="seminar-card__img">
-                      <img src="wp-content/themes/rinri/assets/images/top/seminar2@2x.webp" alt="" width="278" height="196" loading="lazy">
+                      <img src="<?php echo esc_url(get_theme_file_uri('assets/images/top/seminar2@2x.jpg')); ?>" alt="" width="278" height="196" loading="lazy">
                     </div>
                   </div>
                   <dl class="seminar-card__info">
@@ -438,7 +438,7 @@
                       </h3>
                     </div>
                     <div class="seminar-card__img">
-                      <img src="wp-content/themes/rinri/assets/images/top/seminar1@2x.webp" alt="" width="278" height="196" loading="lazy">
+                      <img src="<?php echo esc_url(get_theme_file_uri('assets/images/top/seminar1@2x.jpg')); ?>" alt="" width="278" height="196" loading="lazy">
                     </div>
                   </div>
                   <dl class="seminar-card__info">
@@ -461,8 +461,8 @@
           </div>
         </div>
         <div class="seminar__swiper-ui js-seminar-swiper-ui">
-          <div class="seminar__swiper-ui-prev swiper-button-prev"><img src="wp-content/themes/rinri/assets/images/common/icon-prev.svg" alt="前へ" width="40" height="40" loading="lazy" /></div>
-          <div class="seminar__swiper-ui-next swiper-button-next"><img src="wp-content/themes/rinri/assets/images/common/icon-next.svg" alt="次へ" width="40" height="40" loading="lazy" /></div>
+          <div class="seminar__swiper-ui-prev swiper-button-prev"><img src="<?php echo esc_url(get_theme_file_uri('assets/images/common/icon-prev.svg')); ?>" alt="前へ" width="40" height="40" loading="lazy" /></div>
+          <div class="seminar__swiper-ui-next swiper-button-next"><img src="<?php echo esc_url(get_theme_file_uri('assets/images/common/icon-next.svg')); ?>" alt="次へ" width="40" height="40" loading="lazy" /></div>
           <div class="seminar__swiper-ui-scrollbar swiper-scrollbar"></div>
         </div>
       </div>
@@ -480,7 +480,7 @@
     <div class="about__inner inner">
       <div class="about__head">
         <div class="section-head">
-          <p class="section-head__en">About</p>
+          <p class="section-head__en">About us</p>
           <h2 class="section-head__ja">倫理法人会について</h2>
         </div>
       </div>
@@ -494,7 +494,7 @@
               <a class="about-item__link" href="#">
                 <h3 class="about-item__title">会場一覧（単会情報）</h3>
                 <div class="about-item__img">
-                  <img src="wp-content/themes/rinri/assets/images/top/about1@2x.webp" alt="" width="300" height="212" loading="lazy" />
+                  <img src="<?php echo esc_url(get_theme_file_uri('assets/images/top/about1@2x.jpg')); ?>" alt="" width="300" height="212" loading="lazy" />
                 </div>
                 <div class="about-item__icon">
                   <?php echo get_template_part("parts/icon-arrow-svg") ?>
@@ -505,7 +505,7 @@
               <a class="about-item__link" href="#">
                 <h3 class="about-item__title">組織・役員</h3>
                 <div class="about-item__img">
-                  <img src="wp-content/themes/rinri/assets/images/top/about1@2x.webp" alt="" width="300" height="212" loading="lazy" />
+                  <img src="<?php echo esc_url(get_theme_file_uri('assets/images/top/about1@2x.jpg')); ?>" alt="" width="300" height="212" loading="lazy" />
                 </div>
                 <div class="about-item__icon">
                   <?php echo get_template_part("parts/icon-arrow-svg") ?>
@@ -516,7 +516,7 @@
               <a class="about-item__link" href="#">
                 <h3 class="about-item__title">委員会</h3>
                 <div class="about-item__img">
-                  <img src="wp-content/themes/rinri/assets/images/top/about1@2x.webp" alt="" width="300" height="212" loading="lazy" />
+                  <img src="<?php echo esc_url(get_theme_file_uri('assets/images/top/about1@2x.jpg')); ?>" alt="" width="300" height="212" loading="lazy" />
                 </div>
                 <div class="about-item__icon">
                   <?php echo get_template_part("parts/icon-arrow-svg") ?>
@@ -527,7 +527,7 @@
               <a class="about-item__link" href="#">
                 <h3 class="about-item__title">事務局</h3>
                 <div class="about-item__img">
-                  <img src="wp-content/themes/rinri/assets/images/top/about1@2x.webp" alt="" width="300" height="212" loading="lazy" />
+                  <img src="<?php echo esc_url(get_theme_file_uri('assets/images/top/about1@2x.jpg')); ?>" alt="" width="300" height="212" loading="lazy" />
                 </div>
                 <div class="about-item__icon">
                   <?php echo get_template_part("parts/icon-arrow-svg") ?>

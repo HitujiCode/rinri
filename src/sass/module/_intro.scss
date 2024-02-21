@@ -101,6 +101,8 @@
 
 .intro__button {
   margin-top: rem(50);
-  display: flex;
-  justify-content: center;
+  @include mq("md") {
+    display: flex;
+    justify-content: center;
+  }
 }
