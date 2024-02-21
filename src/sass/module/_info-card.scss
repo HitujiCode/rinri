@@ -26,6 +26,7 @@
   font-size: rem(16);
   font-weight: $regular;
   line-height: calc(30 / 16);
+  color: $black;
   @include mq("md") {
     margin-top: initial;
   }

@@ -23,38 +23,24 @@
   transition: transform 0.3s ease;
 }
 
+.button--red .button__icon,
+.button--blue .button__icon,
+.button--green .button__icon,
+.button--white .button__icon,
+.button--ocher .button__icon {
+  filter: unset;
+}
+
 .button--red {
   @extend .button;
   background-color: $white;
   color: $red;
 }
 
-.button--red .button__icon {
-  filter: unset;
-}
-
 .button--blue {
   @extend .button;
   background-color: $white;
   color: $blue;
-}
-
-.button--small {
-  @extend .button;
-  max-width: rem(212);
-  @include mq("md") {
-    max-width: rem(278);
-  }
-}
-
-.button--blue {
-  @extend .button;
-  background-color: $white;
-  color: $blue;
-}
-
-.button--blue .button__icon {
-  filter: unset;
 }
 
 .button--blue svg *[stroke] {
@@ -71,10 +57,6 @@
   color: $green;
 }
 
-.button--green .button__icon {
-  filter: unset;
-}
-
 .button--green svg *[stroke] {
   stroke: $green;
 }
@@ -89,10 +71,6 @@
   color: $ocher;
 }
 
-.button--white .button__icon {
-  filter: unset;
-}
-
 .button--white svg *[stroke] {
   stroke: $base;
 }
@@ -105,10 +83,6 @@
   @extend .button;
   background-color: $ocher;
   color: $white;
-}
-
-.button--ocher .button__icon {
-  filter: unset;
 }
 
 .button--ocher svg *[stroke] {

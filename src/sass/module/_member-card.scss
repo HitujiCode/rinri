@@ -27,6 +27,7 @@
   font-weight: $regular;
   line-height: 1;
   background-color: $white;
+  color: $black;
   padding: rem(26) rem(48) rem(14) rem(20);
   @include mq("md") {
     padding: rem(20) rem(32) rem(10) rem(20);
@@ -50,11 +51,13 @@
   font-family: $gothic-font;
   line-height: 1;
   letter-spacing: 0.05em;
+  color: $black;
 }
 
 .member-card__text {
   margin-top: rem(32);
   flex-grow: 1;
+  color: $black;
   @include mq("md") {
     margin-top: rem(24);
   }

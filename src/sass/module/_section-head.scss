@@ -29,7 +29,9 @@
   }
 }
 
-.section-head--small {
+.section-head--small,
+.section-head--white,
+.section-head--delta {
   @extend .section-head;
 }
 
@@ -47,16 +49,8 @@
   }
 }
 
-.section-head--white {
-  @extend .section-head;
-}
-
 .section-head--white .section-head__ja {
   color: $white;
-}
-
-.section-head--delta {
-  @extend .section-head;
 }
 
 .section-head--delta .section-head__en {

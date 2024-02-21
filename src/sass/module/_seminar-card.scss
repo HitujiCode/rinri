@@ -3,6 +3,7 @@
 .seminar-card {
   display: flex;
   background-color: $ivory;
+  color: $black;
 }
 
 .seminar-card__link {
@@ -95,10 +96,6 @@
   flex-grow: 1;
 }
 
-.seminar-card__info-term,
-.seminar-card__info-description {
-}
-
 .seminar-card__info-term {
   flex: 1;
   font-weight: $medium;
@@ -109,8 +106,4 @@
   @include mq("md") {
     width: 80%;
   }
-}
-
-.seminar-card__info-description:last-child {
-  // line-height: calc(30 / 16);
 }

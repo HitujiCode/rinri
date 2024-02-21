@@ -4,18 +4,21 @@
   position: relative;
 }
 
-.join::before {
+.join::before,
+.join::after {
   content: "";
   position: absolute;
   bottom: 0;
-  left: 0;
-  left: calc(50vw - rem(620));
-  width: rem(376);
-  height: rem(217);
-  background-image: url("./../images/top/join1@2x.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+}
+
+.join::before {
+  background-image: url("../images/top/join1@2x.svg");
+  left: calc(50vw - rem(620));
+  width: rem(376);
+  height: rem(217);
   @include mq("md") {
     left: rem(10);
     width: rem(188);
@@ -24,16 +27,10 @@
 }
 
 .join::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
+  background-image: url("../images/top/join2@2x.svg");
   right: calc(50vw - rem(612));
   width: rem(291);
   height: rem(203);
-  background-image: url("./../images/top/join2@2x.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
   @include mq("md") {
     right: rem(10);
     width: rem(145);
@@ -42,9 +39,6 @@
   @include mq("sm") {
     content: none;
   }
-}
-
-.join__inner.inner {
 }
 
 .join__container {

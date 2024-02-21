@@ -1,11 +1,5 @@
 @use "global" as *;
 
-.infomation {
-}
-
-.infomation__inner.inner {
-}
-
 .infomation__container {
   display: flex;
   gap: rem(52);
@@ -18,16 +12,10 @@
 .infomation__aside {
   width: calc(265 / 1232 * 100%);
   border-right: 1px solid $lightgray;
-  // padding-right: rem(52);
   padding-right: calc(52 / 1232 * 100%);
   @include mq("md") {
-    // width: 100%;
-    // border-right: initial;
     display: contents;
   }
-}
-
-.infomation__head {
 }
 
 .infomation__tab-menu {

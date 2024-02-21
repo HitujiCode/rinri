@@ -1,8 +1,5 @@
 @use "global" as *;
 
-.mv {
-}
-
 .mv__inner {
   padding-left: rem(36);
   position: relative;
@@ -20,8 +17,6 @@
   gap: calc(114 / 1440 * 100vw);
   @include mq("md") {
     gap: rem(20);
-    // left: rem(2);
-    bottom: initial;
     bottom: rem(110);
     right: calc(10 / 375 * 100%);
     z-index: 1;
@@ -40,9 +35,6 @@
   width: 1px;
   height: rem(160);
   background-color: $lightgray;
-  @include mq("md") {
-    // height: rem(80);
-  }
 }
 
 .mv__scroll-down::before {
@@ -53,28 +45,15 @@
   width: 1px;
   height: rem(44);
   background-color: $base;
-  animation: scrollDownPC 2.6s infinite;
-  @include mq("md") {
-    // height: rem(26);
-    // animation: scrollDownSP 2.6s infinite;
-  }
+  animation: scrollDown 2.6s infinite;
 }
 
-@keyframes scrollDownPC {
+@keyframes scrollDown {
   0% {
     transform: translateY(0);
   }
   100% {
     transform: translateY(rem(116));
-  }
-}
-
-@keyframes scrollDownSP {
-  0% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: translateY(rem(56));
   }
 }
 

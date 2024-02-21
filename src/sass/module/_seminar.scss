@@ -4,23 +4,23 @@
   overflow-x: hidden;
 }
 
-.seminar__inner {
-}
-
-.inner {
-}
-
 .seminar__container {
   position: relative;
-}
-
-.seminar__head {
 }
 
 .seminar__list {
   margin-top: rem(56);
   @include mq("md") {
     margin-top: rem(40);
+  }
+}
+
+.seminar__button {
+  margin-top: rem(60);
+  display: flex;
+  justify-content: center;
+  @include mq("md") {
+    margin-top: rem(50);
   }
 }
 
@@ -54,7 +54,6 @@
 }
 
 .seminar__swiper-ui .swiper-scrollbar-drag {
-  // width: calc(318 / 1060 * 100%);
   background-color: $base;
 }
 
@@ -87,14 +86,5 @@
   margin-left: rem(24);
   @include mq("md") {
     margin-left: rem(16);
-  }
-}
-
-.seminar__button {
-  margin-top: rem(60);
-  display: flex;
-  justify-content: center;
-  @include mq("md") {
-    margin-top: rem(50);
   }
 }

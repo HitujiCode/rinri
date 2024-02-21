@@ -4,12 +4,6 @@
   overflow-x: hidden;
 }
 
-.member__inner {
-}
-
-.member__container {
-}
-
 .member__head {
   text-align: center;
 }
@@ -27,6 +21,15 @@
   margin-top: rem(84);
   @include mq("md") {
     margin-top: rem(48);
+  }
+}
+
+.member__button {
+  margin-top: rem(60);
+  display: flex;
+  justify-content: center;
+  @include mq("md") {
+    margin-top: rem(50);
   }
 }
 
@@ -88,14 +91,5 @@
   margin-left: rem(24);
   @include mq("md") {
     margin-left: rem(16);
-  }
-}
-
-.member__button {
-  margin-top: rem(60);
-  display: flex;
-  justify-content: center;
-  @include mq("md") {
-    margin-top: rem(50);
   }
 }

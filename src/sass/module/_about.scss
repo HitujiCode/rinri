@@ -1,14 +1,5 @@
 @use "global" as *;
 
-.about {
-}
-
-.about__inner.inner {
-}
-
-.about__head {
-}
-
 .about__container {
   margin-top: rem(56);
   display: flex;
@@ -41,9 +32,6 @@
     margin-top: rem(60);
     padding: rem(40) rem(12);
   }
-}
-
-.about__schedule-head {
 }
 
 .about__schedule-body {

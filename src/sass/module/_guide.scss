@@ -1,11 +1,5 @@
 @use "global" as *;
 
-.guide {
-}
-
-.guide__inner {
-}
-
 .guide__items {
   display: flex;
   @include mq("md") {

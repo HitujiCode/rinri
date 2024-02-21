@@ -1,23 +1,8 @@
 @use "global" as *;
 
-.activity {
-}
-
-.activity__inner {
-}
-
-.activity__container {
-}
-
-.activity__head {
-}
-
 .activity__list {
   margin-top: rem(86);
   @include mq("md") {
     margin-top: rem(40);
   }
-}
-
-.activity-cards {
 }
