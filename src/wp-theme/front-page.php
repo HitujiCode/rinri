@@ -97,7 +97,7 @@
           <ol class="activity-cards">
             <li class="activity-card">
               <div class="activity-card__img">
-                <img src="wp-content/themes/rinri/assets/images/top/activity1@2x.jpg" alt="" width="384" height="270" loading="lazy">
+                <img src="wp-content/themes/rinri/assets/images/top/activity1@2x.webp" alt="" width="384" height="270" loading="lazy">
               </div>
               <div class="activity-card__body">
                 <h3 class="activity-card__head">
@@ -115,7 +115,7 @@
             </li>
             <li class="activity-card--blue">
               <div class="activity-card__img">
-                <img src="wp-content/themes/rinri/assets/images/top/activity2@2x.jpg" alt="" width="384" height="270" loading="lazy">
+                <img src="wp-content/themes/rinri/assets/images/top/activity2@2x.webp" alt="" width="384" height="270" loading="lazy">
               </div>
               <div class="activity-card__body">
                 <h3 class="activity-card__head">
@@ -133,7 +133,7 @@
             </li>
             <li class="activity-card--green">
               <div class="activity-card__img">
-                <img src="wp-content/themes/rinri/assets/images/top/activity3@2x.jpg" alt="" width="384" height="270" loading="lazy">
+                <img src="wp-content/themes/rinri/assets/images/top/activity3@2x.webp" alt="" width="384" height="270" loading="lazy">
               </div>
               <div class="activity-card__body">
                 <h3 class="activity-card__head">
@@ -175,7 +175,7 @@
               <li class="member-card swiper-slide">
                 <div class="member-card__img-wrap">
                   <div class="member-card__img">
-                    <img src="wp-content/themes/rinri/assets/images/top/member1@2x.jpg" alt="" width="278" height="196" loading="lazy">
+                    <img src="wp-content/themes/rinri/assets/images/top/member1@2x.webp" alt="" width="278" height="196" loading="lazy">
                   </div>
                   <p class="member-card__company">株式会社◯◯◯◯◯</p>
                 </div>
@@ -187,7 +187,7 @@
               <li class="member-card swiper-slide">
                 <div class="member-card__img-wrap">
                   <div class="member-card__img">
-                    <img src="wp-content/themes/rinri/assets/images/top/member2@2x.jpg" alt="" width="278" height="196" loading="lazy">
+                    <img src="wp-content/themes/rinri/assets/images/top/member2@2x.webp" alt="" width="278" height="196" loading="lazy">
                   </div>
                   <p class="member-card__company">株式会社◯◯◯◯◯</p>
                 </div>
@@ -199,7 +199,7 @@
               <li class="member-card swiper-slide">
                 <div class="member-card__img-wrap">
                   <div class="member-card__img">
-                    <img src="wp-content/themes/rinri/assets/images/top/member3@2x.jpg" alt="" width="278" height="196" loading="lazy">
+                    <img src="wp-content/themes/rinri/assets/images/top/member3@2x.webp" alt="" width="278" height="196" loading="lazy">
                   </div>
                   <p class="member-card__company">株式会社◯◯◯◯◯</p>
                 </div>
@@ -211,7 +211,7 @@
               <li class="member-card swiper-slide">
                 <div class="member-card__img-wrap">
                   <div class="member-card__img">
-                    <img src="wp-content/themes/rinri/assets/images/top/member4@2x.jpg" alt="" width="278" height="196" loading="lazy">
+                    <img src="wp-content/themes/rinri/assets/images/top/member4@2x.webp" alt="" width="278" height="196" loading="lazy">
                   </div>
                   <p class="member-card__company">株式会社◯◯◯◯◯</p>
                 </div>
@@ -223,7 +223,7 @@
               <li class="member-card swiper-slide">
                 <div class="member-card__img-wrap">
                   <div class="member-card__img">
-                    <img src="wp-content/themes/rinri/assets/images/top/member1@2x.jpg" alt="" width="278" height="196" loading="lazy">
+                    <img src="wp-content/themes/rinri/assets/images/top/member1@2x.webp" alt="" width="278" height="196" loading="lazy">
                   </div>
                   <p class="member-card__company">株式会社◯◯◯◯◯</p>
                 </div>
@@ -382,7 +382,7 @@
                       </h3>
                     </div>
                     <div class="seminar-card__img">
-                      <img src="wp-content/themes/rinri/assets/images/top/seminar1@2x.jpg" alt="" width="278" height="196" loading="lazy">
+                      <img src="wp-content/themes/rinri/assets/images/top/seminar1@2x.webp" alt="" width="278" height="196" loading="lazy">
                     </div>
                   </div>
                   <dl class="seminar-card__info">
@@ -410,7 +410,7 @@
                       </h3>
                     </div>
                     <div class="seminar-card__img">
-                      <img src="wp-content/themes/rinri/assets/images/top/seminar2@2x.jpg" alt="" width="278" height="196" loading="lazy">
+                      <img src="wp-content/themes/rinri/assets/images/top/seminar2@2x.webp" alt="" width="278" height="196" loading="lazy">
                     </div>
                   </div>
                   <dl class="seminar-card__info">
@@ -438,7 +438,7 @@
                       </h3>
                     </div>
                     <div class="seminar-card__img">
-                      <img src="wp-content/themes/rinri/assets/images/top/seminar1@2x.jpg" alt="" width="278" height="196" loading="lazy">
+                      <img src="wp-content/themes/rinri/assets/images/top/seminar1@2x.webp" alt="" width="278" height="196" loading="lazy">
                     </div>
                   </div>
                   <dl class="seminar-card__info">
