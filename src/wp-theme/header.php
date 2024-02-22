@@ -20,11 +20,11 @@
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
   <!-- css -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="wp-content/themes/rinri/assets/css/style.css">
+  <link rel="stylesheet" href="<?php echo esc_url(get_theme_file_uri('assets/css/style.css')); ?>">
   <!-- js -->
   <script defer src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script defer src="wp-content/themes/rinri/assets/js/script.js"></script>
+  <script defer src="<?php echo esc_url(get_theme_file_uri('assets/js/script.js')); ?>"></script>
   <?php wp_head(); ?>
 </head>
 
@@ -34,7 +34,7 @@
       <h1 class="header__logo">
         <a href="#" class="logo">
           <div class="logo__icon">
-            <img src="wp-content/themes/rinri/assets/images/common/logo.svg" alt="Logo" width="40" height="40">
+            <img src="<?php echo esc_url(get_theme_file_uri('assets/images/common/logo.svg')); ?>" alt="Logo" width="40" height="40">
           </div>
           <p class="logo__title">新潟県倫理法人会</p>
         </a>

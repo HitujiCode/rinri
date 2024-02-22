@@ -1,5 +1,5 @@
   <button class="pagetop js-pagetop">
-    <img class="js-pagetop-img" src="wp-content/themes/rinri/assets/images/common/icon-prev.svg" alt="トップへ戻る" width="40" height="40" loading="lazy" />
+    <img class="js-pagetop-img" src="<?php echo esc_url(get_theme_file_uri('assets/images/common/icon-prev.svg')); ?>" alt="トップへ戻る" width="40" height="40" loading="lazy" />
   </button>
 
   <footer class="footer">
@@ -9,7 +9,7 @@
           <div class="footer__logo">
             <a href="#" class="logo">
               <div class="logo__icon">
-                <img src="wp-content/themes/rinri/assets/images/common/logo.svg" alt="Logo" width="40" height="40" loading="lazy">
+                <img src="<?php echo esc_url(get_theme_file_uri('assets/images/common/logo.svg')); ?>" alt="Logo" width="40" height="40" loading="lazy">
               </div>
               <p class="logo__title">新潟県倫理法人会</p>
             </a>
