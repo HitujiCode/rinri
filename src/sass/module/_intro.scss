@@ -1,10 +1,6 @@
 @use "global" as *;
 
 .intro {
-  position: relative;
-  @include mq("md") {
-    overflow-x: hidden;
-  }
 }
 
 .intro::before {
@@ -64,19 +60,13 @@
 
 .intro__body {
   flex: 1;
-  padding-top: rem(96);
+  padding-top: rem(94);
   @include mq("md") {
     padding-top: rem(40);
   }
 }
 
 .intro__title {
-  font-size: rem(48);
-  font-weight: $regular;
-  line-height: calc(68 / 48);
-  @include mq("md") {
-    font-size: rem(30);
-  }
 }
 
 .intro__text-wrap {
@@ -87,16 +77,11 @@
 }
 
 .intro__head {
-  font-size: rem(20);
-  font-weight: $semi-bold;
-  line-height: 2;
-  @include mq("md") {
-    font-size: rem(16);
-  }
 }
 
 .intro__text {
   margin-top: rem(20);
+  text-align: justify;
 }
 
 .intro__button {
@@ -104,5 +89,68 @@
   @include mq("md") {
     display: flex;
     justify-content: center;
+  }
+}
+
+.intro--delta,
+.intro--reverse {
+  @extend .intro;
+}
+
+.intro--delta::before,
+.intro--reverse::before {
+  content: none;
+}
+
+.intro--delta .intro__text {
+  margin-top: rem(42);
+  @include mq("md") {
+    margin-top: rem(32);
+  }
+}
+
+.intro--reverse .intro__container {
+  flex-direction: row-reverse;
+  gap: min((146 / 1232 * 100vw), rem(146));
+  @include mq("md") {
+    flex-direction: column;
+    gap: rem(40);
+  }
+}
+
+.intro--reverse .intro__body {
+  padding-top: initial;
+}
+
+.intro--reverse .intro__img {
+  width: calc(596 / 1232 * 100%);
+  @include mq("md") {
+    width: 100%;
+    // margin-right: calc(50% - 50vw);
+  }
+}
+
+.intro--reverse .intro__img img {
+  aspect-ratio: 596/466;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  @include mq("md") {
+    // aspect-ratio: 598/550;
+    // object-position: top;
+  }
+}
+
+.intro--reverse .intro__text {
+  margin-top: rem(45);
+  @include mq("md") {
+    margin-top: rem(32);
+  }
+}
+
+.intro--reverse .intro__button {
+  margin-top: rem(56);
+  @include mq("md") {
+    margin-top: rem(40);
   }
 }

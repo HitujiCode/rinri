@@ -72,6 +72,7 @@
   flex-grow: 1;
   color: $white;
   text-align: justify;
+  font-feature-settings: "palt";
   @include mq(md) {
     margin-top: rem(24);
     font-feature-settings: "palt";
@@ -95,4 +96,28 @@
 .activity-card--green {
   @extend .activity-card;
   background-color: $green;
+}
+
+.activity-card--delta {
+  @extend .activity-card;
+  background-color: $red;
+}
+
+.activity-card--blue-delta {
+  @extend .activity-card;
+  background-color: $blue;
+}
+
+.activity-card--green-delta {
+  @extend .activity-card;
+  background-color: $green;
+}
+
+.activity-card--delta .activity-card__body,
+.activity-card--blue-delta .activity-card__body,
+.activity-card--green-delta .activity-card__body {
+  padding-bottom: rem(60);
+  @include mq("md") {
+    padding-bottom: rem(32);
+  }
 }

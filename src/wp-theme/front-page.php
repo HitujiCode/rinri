@@ -59,10 +59,10 @@
           <img src="<?php echo esc_url(get_theme_file_uri('assets/images/top/intro@2x.jpg')); ?>" alt="" width="598" height="717" loading="lazy" />
         </div>
         <div class="intro__body">
-          <div class="intro__title">倫理法人会って<br>
+          <div class="intro__title title">倫理法人会って<br>
             どんなところ？</div>
           <div class="intro__text-wrap">
-            <p class="intro__head">経営者が人としての立ち振る舞いを学び、<br>
+            <p class="intro__head title-small">経営者が人としての立ち振る舞いを学び、<br>
               組織の活力を高めていくための場所です</p>
             <p class="intro__text text">当サイトをご覧になっている方の中には、<br>
               倫理法人会に対して、<br>
@@ -95,7 +95,7 @@
         </div>
         <div class="activity__list">
           <ol class="activity-cards">
-            <li class="activity-card">
+            <li class="activity-cards__card activity-card">
               <div class="activity-card__img">
                 <img src="<?php echo esc_url(get_theme_file_uri('assets/images/top/activity1@2x.jpg')); ?>" alt="" width="384" height="270" loading="lazy">
               </div>
@@ -113,7 +113,7 @@
                 </div>
               </div>
             </li>
-            <li class="activity-card--blue">
+            <li class="activity-cards__card  activity-card--blue">
               <div class="activity-card__img">
                 <img src="<?php echo esc_url(get_theme_file_uri('assets/images/top/activity2@2x.jpg')); ?>" alt="" width="384" height="270" loading="lazy">
               </div>
@@ -131,7 +131,7 @@
                 </div>
               </div>
             </li>
-            <li class="activity-card--green">
+            <li class="activity-cards__card activity-card--green">
               <div class="activity-card__img">
                 <img src="<?php echo esc_url(get_theme_file_uri('assets/images/top/activity3@2x.jpg')); ?>" alt="" width="384" height="270" loading="lazy">
               </div>
@@ -620,7 +620,7 @@
   <div class="join layout-join">
     <div class="join__inner inner">
       <div class="join__container">
-        <p class="join__head">倫理法人会で一緒に<br class="u-mobile">解決策を学びませんか？</p>
+        <p class="join__head title--medium">倫理法人会で一緒に<br class="u-mobile">解決策を学びませんか？</p>
         <div class="join__text">
           <p class="text">「会社を変えたい、でもどうすれば…」<br>
             数多くの経営者が学び合う倫理法人会で、答えが見つかるかもしれません。</p>
