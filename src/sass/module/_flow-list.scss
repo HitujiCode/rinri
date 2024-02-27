@@ -1,0 +1,16 @@
+@use "global" as *;
+
+.flow-list {
+  counter-reset: flow-item-counter;
+}
+
+.flow-list__item {
+  counter-increment: flow-item-counter;
+}
+
+.flow-list__item:not(:first-child) {
+  margin-top: rem(64);
+  @include mq("md") {
+    margin-top: rem(48);
+  }
+}

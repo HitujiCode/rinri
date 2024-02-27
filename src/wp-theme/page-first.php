@@ -5,7 +5,7 @@
     <div class="sub-fv__inner">
       <div class="sub-fv__container">
         <div class="sub-fv__img">
-          <img src="<?php echo esc_url(get_theme_file_uri('assets/images/first/fv@2x.jpg')); ?>" alt="" width="916" height="335" />
+          <img src="<?php echo esc_url(get_theme_file_uri('assets/images/sub/fv@2x.jpg')); ?>" alt="" width="916" height="335" />
         </div>
         <h2 class="sub-fv__title">はじめての方へ</h2>
       </div>
@@ -27,7 +27,7 @@
       <div class="faq-intro__faq-single-block">
         <div class="faq--large">
           <div class="faq__img">
-            <img src="<?php echo esc_url(get_theme_file_uri('assets/images/first/icon-face3.svg')); ?>" alt="" role="presentation" width="130" height="129" />
+            <img src="<?php echo esc_url(get_theme_file_uri('assets/images/sub/icon-face3.svg')); ?>" alt="" role="presentation" width="130" height="129" />
           </div>
           <h3 class="faq__head title-small">知人から倫理法人会へ誘われた<br>
             でも、<span class="text-accent">怖いところ</span>だったらどうしよう…</h3>
@@ -61,7 +61,7 @@
           <div class="faq-block">
             <div class="faq-block__question faq">
               <div class="faq__img">
-                <img src="<?php echo esc_url(get_theme_file_uri('assets/images/first/icon-face1.svg')); ?>" alt="" role="presentation" width="80" height="80" />
+                <img src="<?php echo esc_url(get_theme_file_uri('assets/images/sub/icon-face1.svg')); ?>" alt="" role="presentation" width="80" height="80" />
               </div>
               <div class="faq__head">
                 <p class="title-small">「怪しい団体」という噂を聞いたんですが…</p>
@@ -69,7 +69,7 @@
             </div>
             <div class="faq-block__answer faq--ivory">
               <div class="faq__img">
-                <img src="<?php echo esc_url(get_theme_file_uri('assets/images/first/icon-face2.svg')); ?>" alt="" role="presentation" width="80" height="80" />
+                <img src="<?php echo esc_url(get_theme_file_uri('assets/images/sub/icon-face2.svg')); ?>" alt="" role="presentation" width="80" height="80" />
               </div>
               <div class="faq__text">
                 <p class="text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
@@ -141,7 +141,7 @@
               <div class="faq-block">
                 <div class="faq-block__question faq--white">
                   <div class="faq__img">
-                    <img src="<?php echo esc_url(get_theme_file_uri('assets/images/first/icon-face1.svg')); ?>" alt="" role="presentation" width="80" height="80" />
+                    <img src="<?php echo esc_url(get_theme_file_uri('assets/images/sub/icon-face1.svg')); ?>" alt="" role="presentation" width="80" height="80" />
                   </div>
                   <div class="faq__head">
                     <p class="title-small">早朝から集まったりするんですよね…？</p>
@@ -149,7 +149,7 @@
                 </div>
                 <div class="faq-block__answer faq--beige">
                   <div class="faq__img">
-                    <img src="<?php echo esc_url(get_theme_file_uri('assets/images/first/icon-face2.svg')); ?>" alt="" role="presentation" width="80" height="80" />
+                    <img src="<?php echo esc_url(get_theme_file_uri('assets/images/sub/icon-face2.svg')); ?>" alt="" role="presentation" width="80" height="80" />
                   </div>
                   <div class="faq__text">
                     <p class="text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
@@ -194,7 +194,7 @@
           <div class="faq-block">
             <div class="faq-block__question faq">
               <div class="faq__img">
-                <img src="<?php echo esc_url(get_theme_file_uri('assets/images/first/icon-face1.svg')); ?>" alt="" role="presentation" width="80" height="80" />
+                <img src="<?php echo esc_url(get_theme_file_uri('assets/images/sub/icon-face1.svg')); ?>" alt="" role="presentation" width="80" height="80" />
               </div>
               <div class="faq__head">
                 <p class="title-small">しつこい勧誘があったら嫌だな…</p>
@@ -202,7 +202,7 @@
             </div>
             <div class="faq-block__answer faq--beige">
               <div class="faq__img">
-                <img src="<?php echo esc_url(get_theme_file_uri('assets/images/first/icon-face2.svg')); ?>" alt="" role="presentation" width="80" height="80" />
+                <img src="<?php echo esc_url(get_theme_file_uri('assets/images/sub/icon-face2.svg')); ?>" alt="" role="presentation" width="80" height="80" />
               </div>
               <div class="faq__text">
                 <p class="text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
@@ -238,7 +238,7 @@
       </div>
     </div>
     <div class="sub-cta__img">
-      <img src="<?php echo esc_url(get_theme_file_uri('assets/images/first/bg-cta@2x.jpg')); ?>" alt="" role="presentation" width="1440" height="560" loading="lazy" />
+      <img src="<?php echo esc_url(get_theme_file_uri('assets/images/sub/bg-cta@2x.jpg')); ?>" alt="" role="presentation" width="1440" height="560" loading="lazy" />
     </div>
   </div>
 
