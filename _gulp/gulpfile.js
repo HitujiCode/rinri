@@ -20,35 +20,31 @@ const del = require("del"); // ファイルやディレクトリを削除する�
 const webp = require("gulp-webp"); //webp変換
 const rename = require("gulp-rename"); //ファイル名変更
 
+const os = require("os");
 const projectName = "rinri";
 const wpThemeName = "rinri";
+const userInfo = os.userInfo();
 const baseFolder =
   process.env.BASE_FOLDER ||
-  `/Users/samig/Local Sites/${projectName}/app/public/wp-content/themes/${wpThemeName}`;
+  `/Users/${userInfo.username}/Local Sites/${projectName}/app/public/wp-content/themes/${wpThemeName}`;
 
 // 読み込み先
 const srcPath = {
   css: "../src/sass/**/*.scss",
   js: "../src/js/**/*",
   img: "../src/images/**/*",
-  wp: "../src/wp-theme/**/*",
   font: "../src/fonts/**/*",
+  wp: "../src/wp-theme/**/*",
 };
 
 // WordPress反映用
 const destPath = {
-  // all: `../src/wp-theme/**/*`,
-  // css: `../src/wp-theme/assets/css/`,
-  // js: `../src/wp-theme/assets/js/`,
-  // img: `../src/wp-theme/assets/images/`,
-  // wp: `${baseFolder}/`,
-  // font: `../src/wp-theme/assets/fonts/`,
   all: `${baseFolder}/**/*`,
-  css: `${baseFolder}/assets/css/`,
-  js: `${baseFolder}/assets/js/`,
-  img: `${baseFolder}/assets/images/`,
+  css: `../src/wp-theme/assets/css/`,
+  js: `../src/wp-theme/assets/js/`,
+  img: `../src/wp-theme/assets/images/`,
+  font: `../src/wp-theme/assets/fonts/`,
   wp: `${baseFolder}/`,
-  font: `${baseFolder}/assets/fonts/`,
 };
 
 // wp-themeのコピー
