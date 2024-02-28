@@ -167,6 +167,7 @@
           </ol>
         </div>
       </div>
+    </div>
   </section>
 
   <div class=" join layout-sub-join">

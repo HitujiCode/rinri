@@ -32,7 +32,7 @@
   <header class="header">
     <div class="header__inner">
       <h1 class="header__logo">
-        <a href="#" class="logo">
+        <a href="<?php echo esc_url(home_url("")); ?>" class="logo">
           <div class="logo__icon">
             <img src="<?php echo esc_url(get_theme_file_uri('assets/images/common/logo.svg')); ?>" alt="Logo" width="40" height="40">
           </div>
@@ -42,10 +42,10 @@
       <nav class="header__nav">
         <ul class="header__nav-items">
           <li class="header__nav-item">
-            <a href="#"><span>はじめての方へ</span></a>
+            <a href="<?php echo esc_url(home_url("/first")); ?>"><span>はじめての方へ</span></a>
           </li>
           <li class="header__nav-item header__nav-item--noicon">
-            <a href="#"><span>入会案内</span></a>
+            <a href="<?php echo esc_url(home_url("/membership")); ?>"><span>入会案内</span></a>
           </li>
           <li class="header__nav-item">
             <a href="#"><span>会員の方へ</span></a>
@@ -67,10 +67,10 @@
         <nav class="header__drawer-nav">
           <ul class="header__drawer-items">
             <li class="header__drawer-item">
-              <a href="#"><span>はじめての方へ</span></a>
+              <a href="<?php echo esc_url(home_url("/first")); ?>"><span>はじめての方へ</span></a>
             </li>
             <li class="header__drawer-item">
-              <a href="#"><span>入会案内</span></a>
+              <a href="<?php echo esc_url(home_url("/membership")); ?>"><span>入会案内</span></a>
             </li>
             <li class="header__drawer-item">
               <a href="#"><span>会員の方へ</span></a>

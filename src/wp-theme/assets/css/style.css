@@ -314,13 +314,14 @@ select::-ms-expand {
 	font-weight: 400;
 	line-height: 1.4285714286;
 	margin-top: 0.625rem;
+	margin-top: 0.125rem;
 }
 
 .activity-card__text {
 	font-feature-settings: "palt";
 	color: #fff;
 	flex-grow: 1;
-	margin-top: 2.25rem;
+	margin-top: 2rem;
 	text-align: justify;
 }
 
@@ -2143,8 +2144,19 @@ select::-ms-expand {
 }
 
 .layout-sub-intro {
-	background-image: linear-gradient(to bottom, #f7f6f0, #fff 64.53%);
 	padding-top: 5.625rem;
+	position: relative;
+}
+
+.layout-sub-intro::before {
+	background-image: linear-gradient(to bottom, #f7f6f0 64.53%, #fff);
+	content: "";
+	left: 0;
+	min-height: 59.8571428571vw;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: -1;
 }
 
 .layout-sub-join {
@@ -2162,7 +2174,7 @@ select::-ms-expand {
 }
 
 .layout-sub-reward {
-	margin-top: 11.875rem;
+	margin-top: 12.375rem;
 }
 
 @media (hover: hover) {
@@ -2403,12 +2415,12 @@ a[href^="tel:"] {
 .faq--beige,
 .faq--white,
 .faq--ivory {
-	gap: 1rem;
+	gap: 0.625rem;
 	padding: 1.25rem;
 }
 
 .faq__img {
-	width: 3.75rem;
+	width: 3.125rem;
 }
 
 .faq--large {

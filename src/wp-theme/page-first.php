@@ -95,43 +95,49 @@
         </div>
         <div class="sub-activity__list">
           <ol class="activity-cards">
-            <li class="activity-cards__card activity-card--delta">
-              <div class="activity-card__img">
-                <img src="<?php echo esc_url(get_theme_file_uri('assets/images/top/activity1@2x.jpg')); ?>" alt="" width="384" height="270" loading="lazy">
-              </div>
-              <div class="activity-card__body">
-                <h4 class="activity-card__head">
-                  <span class="activity-card__number">#0</span>
-                  <span class="activity-card__title">モーニングセミナー</span>
-                </h4>
-                <p class="activity-card__text text">経営者モーニングセミナーは、地元で活躍している方々の講話等を通し、企業のトップとして自らの生き方や会社のあり方を真剣に考えるための場所です。早朝の爽やかな空気を味わいながら明るい一日をスタートさせませんか。</p>
-              </div>
+            <li class="activity-cards__card">
+              <a class="activity-card--delta" href="#">
+                <div class="activity-card__img">
+                  <img src="<?php echo esc_url(get_theme_file_uri('assets/images/top/activity1@2x.jpg')); ?>" alt="" width="384" height="270" loading="lazy">
+                </div>
+                <div class="activity-card__body">
+                  <h4 class="activity-card__head">
+                    <span class="activity-card__number">#0</span>
+                    <span class="activity-card__title">モーニングセミナー</span>
+                  </h4>
+                  <p class="activity-card__text text">経営者モーニングセミナーは、地元で活躍している方々の講話等を通し、企業のトップとして自らの生き方や会社のあり方を真剣に考えるための場所です。早朝の爽やかな空気を味わいながら明るい一日をスタートさせませんか。</p>
+                </div>
+              </a>
             </li>
-            <li class="activity-cards__card activity-card--blue-delta">
-              <div class="activity-card__img">
-                <img src="<?php echo esc_url(get_theme_file_uri('assets/images/top/activity2@2x.jpg')); ?>" alt="" width="384" height="270" loading="lazy">
-              </div>
-              <div class="activity-card__body">
-                <h4 class="activity-card__head">
-                  <span class="activity-card__number">#0</span>
-                  <span class="activity-card__title">各種講演会・イベント</span>
-                </h4>
-                <p class="activity-card__text text">月に一度夕方より地域の経営者同士が共に学び、語り合う異業種交流の場です。その折々のテーマで講師を招いての講演会、勉強会、フォーラム、交流会を行います。</p>
-              </div>
+            <li class="activity-cards__card">
+              <a class="activity-card--blue-delta" href="#">
+                <div class="activity-card__img">
+                  <img src="<?php echo esc_url(get_theme_file_uri('assets/images/top/activity2@2x.jpg')); ?>" alt="" width="384" height="270" loading="lazy">
+                </div>
+                <div class="activity-card__body">
+                  <h4 class="activity-card__head">
+                    <span class="activity-card__number">#0</span>
+                    <span class="activity-card__title">各種講演会・イベント</span>
+                  </h4>
+                  <p class="activity-card__text text">月に一度夕方より地域の経営者同士が共に学び、語り合う異業種交流の場です。その折々のテーマで講師を招いての講演会、勉強会、フォーラム、交流会を行います。</p>
+                </div>
+              </a>
             </li>
-            <li class="activity-cards__card activity-card--green-delta">
-              <div class="activity-card__img">
-                <img src="<?php echo esc_url(get_theme_file_uri('assets/images/top/activity3@2x.jpg')); ?>" alt="" width="384" height="270" loading="lazy">
-              </div>
-              <div class="activity-card__body">
-                <h4 class="activity-card__head">
-                  <span class="activity-card__number">#0</span>
-                  <span class="activity-card__title">活力朝礼</span>
-                </h4>
-                <p class="activity-card__text text">一日の始まりは元気な朝礼から<br>
-                  企業の活性化は朝のスタートが大切です。<br>
-                  明るく朗らかな挨拶で社員の気持ちを高め、心をひとつにして元気に明るく仕事に臨みたいものです。</p>
-              </div>
+            <li class="activity-cards__card">
+              <a class="activity-card--green-delta" href="#">
+                <div class="activity-card__img">
+                  <img src="<?php echo esc_url(get_theme_file_uri('assets/images/top/activity3@2x.jpg')); ?>" alt="" width="384" height="270" loading="lazy">
+                </div>
+                <div class="activity-card__body">
+                  <h4 class="activity-card__head">
+                    <span class="activity-card__number">#0</span>
+                    <span class="activity-card__title">活力朝礼</span>
+                  </h4>
+                  <p class="activity-card__text text">一日の始まりは元気な朝礼から<br>
+                    企業の活性化は朝のスタートが大切です。<br>
+                    明るく朗らかな挨拶で社員の気持ちを高め、心をひとつにして元気に明るく仕事に臨みたいものです。</p>
+                </div>
+              </a>
             </li>
           </ol>
         </div>

@@ -9,14 +9,14 @@
   padding: rem(40);
   @include mq("md") {
     padding: rem(20);
-    gap: rem(16);
+    gap: rem(10);
   }
 }
 
 .faq__img {
   width: rem(80);
   @include mq("md") {
-    width: rem(60);
+    width: rem(50);
   }
 }
 
