@@ -2424,14 +2424,19 @@ a[href^="tel:"] {
 }
 
 .flow-item__left {
-	left: 0.5rem;
+	left: 50%;
 	position: absolute;
 	top: -1.25rem;
+	transform: translateX(-50%);
 }
 
 .flow-item__left::after {
-	height: 2rem;
-	top: 2rem;
+	height: 1.625rem;
+	top: -2.25rem;
+}
+
+.flow-list__item:first-child .flow-item__left::after {
+	content: none;
 }
 
 .flow-item__number::before {
@@ -2448,7 +2453,9 @@ a[href^="tel:"] {
 }
 
 .flow-item__title {
-	padding-left: 0.625rem;
+	word-wrap: anywhere;
+	text-align: center;
+	word-break: keep-all;
 }
 
 .flow-item__text {
@@ -2459,10 +2466,6 @@ a[href^="tel:"] {
 	flex-wrap: wrap;
 	justify-content: center;
 	margin-top: 2rem;
-}
-
-.flow-list__item:not(:first-child) {
-	margin-top: 3rem;
 }
 
 .footer {
