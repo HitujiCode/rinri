@@ -13,18 +13,6 @@
   <meta property="og:site_name" content="" />
   <meta property="og:description" content="" />
 
-  <!-- functions.phpで後で読み込む -->
-  <!-- google font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
-  <!-- css -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="<?php echo esc_url(get_theme_file_uri('assets/css/style.css')); ?>">
-  <!-- js -->
-  <script defer src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-  <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script defer src="<?php echo esc_url(get_theme_file_uri('assets/js/script.js')); ?>"></script>
   <?php wp_head(); ?>
 </head>
 
