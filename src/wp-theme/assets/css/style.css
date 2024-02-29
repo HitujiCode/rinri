@@ -2443,11 +2443,6 @@ a[href^="tel:"] {
 }
 
 .flow-item__left::after {
-	height: 1.625rem;
-	top: -2.25rem;
-}
-
-.flow-list__item:first-child .flow-item__left::after {
 	content: none;
 }
 

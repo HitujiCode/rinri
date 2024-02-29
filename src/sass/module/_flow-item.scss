@@ -35,13 +35,6 @@
   background-color: $base;
   margin-top: rem(8);
   @include mq("md") {
-    top: rem(-36);
-    height: rem(26);
-  }
-}
-
-.flow-list__item:first-child .flow-item__left::after {
-  @include mq("md") {
     content: none;
   }
 }
@@ -89,7 +82,7 @@
     text-align: center;
     overflow-wrap: anywhere;
     word-break: keep-all;
-  //   padding-left: rem(10);
+    //   padding-left: rem(10);
   }
 }
 
