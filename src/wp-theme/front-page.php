@@ -617,47 +617,9 @@
     </div>
   </section>
 
-  <div class="join layout-join">
-    <div class="join__inner inner">
-      <div class="join__container">
-        <p class="join__head title--medium">倫理法人会で一緒に<br class="u-mobile">解決策を学びませんか？</p>
-        <div class="join__text">
-          <p class="text">「会社を変えたい、でもどうすれば…」<br>
-            数多くの経営者が学び合う倫理法人会で、答えが見つかるかもしれません。</p>
-        </div>
-        <div class="join__button">
-          <a href="#" class="button">入会について
-            <div class="button__icon">
-              <?php echo get_template_part("parts/icon-arrow-svg") ?>
-            </div>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
+  <?php echo get_template_part("parts/join") ?>
 
-  <section class="contact layout-contact">
-    <div class="contact__inner inner">
-      <div class="contact__container">
-        <div class="contact__head">
-          <div class="section-head--white">
-            <p class="section-head__en">Contact</p>
-            <h2 class="section-head__ja">お問い合わせ</h2>
-          </div>
-        </div>
-        <div class="contact__text">
-          <p class="text--white">倫理法人会についてご不明な点があれば、<wbr>まずはお気軽にご相談ください。</p>
-        </div>
-        <div class="contact__button">
-          <a href="#" class="button">Contact form
-            <div class="button__icon">
-              <?php echo get_template_part("parts/icon-arrow-svg") ?>
-            </div>
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
+  <?php echo get_template_part("parts/contact") ?>
 
 </main>
 
